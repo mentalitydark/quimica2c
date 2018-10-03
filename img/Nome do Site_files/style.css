@@ -24,37 +24,21 @@ div.separador_header {
     margin: 30px;
     background-color: gray;
 }
-#audio img:first-child{
-    z-index: 1;
-}
-#audio {
-    width: 20px;
-    height: 20px;
-}
-#audio img{
-    position: absolute;
-}
 .audio_icone{
     width: 20px;
     height: 20px;
 }
 #container{
     margin: 5px;
-    height: 100%;
-}
-#tabela{
-    height: 100%;
 }
 #elementos_de_cima{
     display: flex;
     flex-direction: row;
 }
-#hidrogenio, #familia_1a, #familia_2a{
+#hidrogenio, #familia_1, #familia_2{
     display: flex;
     flex-direction: column;
+    width: 57px;
+    height: 59;
     margin: 5px;
-}
-#hidrogenio img ,#familia_1a img, #familia_2a img{
-        width: 57px;
-        height: 69px;
 }
