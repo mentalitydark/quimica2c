@@ -39,9 +39,8 @@ div.separador_header {
     width: 20px;
     height: 20px;
 }
-#container{
-    margin: 5px;
-    /* height: 100%; */
+table {
+    overflow: scroll;
 }
 #tabela{
     height: 100%;
@@ -83,7 +82,6 @@ div.separador_header {
         height: 69px;
 } */
 th:not(:first-child){
-    padding: 0px 35px;
     height: 10px;
     border-left: 1px solid rgb(81, 137, 243);
     border-right: 1px solid rgb(81, 137, 243);
@@ -103,26 +101,88 @@ div.gases{
     background-color: rgb(108, 223, 108);
 }
 div.metal_alcalino{
-    background-color: yellow;
+    background-color: rgb(255, 208, 0);
+}
+div.metal_alcalino_terroso{
+    background-color: rgb(255, 242, 168)
 }
 div.elemento{
     padding: 2px;
     border: 1px solid black;
-    text-align: center;
     font-size: 1.09em;
+    width: 66px;
+    height: 66px;
 }
 span.numero {
     display: block;
     font-weight: bold;
-    text-align: center;
-    margin: 2px;
+    text-align: right;
+
 }
 strong.sigla{
     font-weight: bolder;
-    font-size: 1.19em;
-    margin: 2px;
+    font-size: 1.25em;
 }
 p.nome{
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
-
+p.massa {
+    text-align: right;
+    font-size: 0.8em;
+}
+div.legenda_elemento{
+    padding-left: 3px;
+    box-sizing: border-box;
+}
+span.legenda_numero{
+    display: block;
+    font-size: 1.1em
+}
+strong.legenda_sigla{
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+td.legenda{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+fieldset{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 0px 10px;
+}
+legend
+{
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+}
+div#div_legenda {
+    display: flex;
+    justify-content: flex-end;
+}
+div.legenda_metal_alcalino{
+    width: 20px;
+    border: 1px solid black;
+    height: 20px;
+    margin-left: 5px;
+    background-color: rgb(255, 208, 0);
+}
+div#legenda_metal_alcalino{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+div.legenda_metal_alcalino_terroso{
+    width: 20px;
+    border: 1px solid black;
+    height: 20px;
+    margin-left: 5px;
+    background-color: rgb(255, 242, 168);
+}
+div#legenda_metal_alcalino_terroso {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
