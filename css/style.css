@@ -30,6 +30,7 @@ div.separador_header {
 #audio {
     width: 20px;
     height: 20px;
+    margin-left: 10px;
 }
 #audio img{
     position: absolute;
@@ -40,21 +41,88 @@ div.separador_header {
 }
 #container{
     margin: 5px;
-    height: 100%;
+    /* height: 100%; */
 }
 #tabela{
     height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
+/* }
 #elementos_de_cima{
     display: flex;
     flex-direction: row;
 }
-#hidrogenio, #familia_1a, #familia_2a{
+#familia_3b,
+#familia_4b,
+#familia_5b
+{
+    display: flex;
+    justify-content: flex-end;
+}
+#hidrogenio,
+#familia_1a,
+#familia_2a,
+#familia_3b,
+#familia_4b,
+#familia_5b
+{
     display: flex;
     flex-direction: column;
     margin: 5px;
 }
-#hidrogenio img ,#familia_1a img, #familia_2a img{
+#hidrogenio img,
+#familia_1a img,
+#familia_2a img,
+#familia_3b img,
+#familia_4b img,
+#familia_5b img
+{
         width: 57px;
         height: 69px;
+} */
+th:not(:first-child){
+    padding: 0px 35px;
+    height: 10px;
+    border-left: 1px solid rgb(81, 137, 243);
+    border-right: 1px solid rgb(81, 137, 243);
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
+td.periodo{
+    width: 20px;
+    height: 10px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    vertical-align: middle;
+    text-align: left;
+}
+div.gases{
+    background-color: rgb(108, 223, 108);
+}
+div.metal_alcalino{
+    background-color: yellow;
+}
+div.elemento{
+    padding: 2px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.09em;
+}
+span.numero {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 2px;
+}
+strong.sigla{
+    font-weight: bolder;
+    font-size: 1.19em;
+    margin: 2px;
+}
+p.nome{
+    font-size: 1.2em;
+}
+
