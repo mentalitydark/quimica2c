@@ -1,13 +1,15 @@
 /*  RPG Base 76B3D7
     http: //paletton.com/#uid=23u0u0kflNj0LRA14OAt+VMu+Um
 */
+html, body{
+    height: 100%;
+}
 header{
     height: 60px;
     background-color: rgb(106, 198, 252);
     border-bottom: 1px solid black;
     align-items: center;
     display: flex;
-    /* justify-content: space-between; */
     padding: 0px 10px 0px 10px;
 }
 header img#ifrs {
@@ -39,14 +41,14 @@ div.separador_header {
     width: 20px;
     height: 20px;
 }
-table {
-    overflow: scroll;
+#container {
+    display: flex;
 }
 #tabela{
     height: 100%;
     padding: 10px;
-    display: flex;
-    justify-content: center;
+    overflow: auto;
+    margin: auto;
 }
 /* }
 #elementos_de_cima{
