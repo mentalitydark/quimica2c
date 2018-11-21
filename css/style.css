@@ -1,16 +1,25 @@
 /*  RPG Base 76B3D7
     http: //paletton.com/#uid=23u0u0kflNj0LRA14OAt+VMu+Um
 */
+/* tr:hover{
+    border: 1px solid cyan
+}
+td:hover{
+    position: relative;
+}
+td:hover:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: 100%;
+    background-color: rgba(247, 17, 17, 0.2);
+    z-index: 1;
+
+} */
 html, body{
     height: 100%;
-}
-header{
-    height: 60px;
-    background-color: rgb(106, 198, 252);
-    border-bottom: 1px solid black;
-    align-items: center;
-    display: flex;
-    padding: 0px 10px 0px 10px;
 }
 header img#ifrs {
     width: 40px;
@@ -22,9 +31,10 @@ header img#sia {
 }
 div.separador_header {
     height: 50px;
-    width: 2px;
-    margin: 30px;
-    background-color: gray;
+    width: 1px;
+    /* margin: 30px; */
+    background-color: rgba(1, 1, 1, 0.2);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05)
 }
 #audio img:first-child{
     z-index: 1;
@@ -33,6 +43,8 @@ div.separador_header {
     width: 20px;
     height: 20px;
     margin-left: 10px;
+    position: absolute;
+    bottom: 0;
 }
 #audio img{
     position: absolute;
@@ -43,46 +55,44 @@ div.separador_header {
 }
 #container {
     display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
 }
 #tabela{
-    height: 100%;
-    padding: 10px;
     overflow: auto;
-    margin: auto;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: center;
 }
-/* }
-#elementos_de_cima{
+div#emcima{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+}
+div#divTabela {
     display: flex;
     flex-direction: row;
+    align-items: flex-start
 }
-#familia_3b,
-#familia_4b,
-#familia_5b
-{
+header {
+    height: 60px;
+    background-color: rgb(106, 198, 252);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
 }
-#hidrogenio,
-#familia_1a,
-#familia_2a,
-#familia_3b,
-#familia_4b,
-#familia_5b
-{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-#hidrogenio img,
-#familia_1a img,
-#familia_2a img,
-#familia_3b img,
-#familia_4b img,
-#familia_5b img
-{
-        width: 57px;
-        height: 69px;
-} */
+
 th:not(:first-child){
     height: 10px;
     border-left: 1px solid rgb(81, 137, 243);
@@ -99,51 +109,83 @@ td.periodo{
     vertical-align: middle;
     text-align: left;
 }
-div.gases{
-    background-color: rgb(108, 223, 108);
+div.metal_de_transicao {
+    background-color: #1e80e2;
+}
+div.halogenio {
+    background-color: #bbdd13;
+}
+div.lantanideo {
+    background-color: #16df59;
+}
+div.outro_metal {
+    background-color: #2514df;
+}
+div.nao_metal {
+    background-color: #e014ad;
+}
+div.actinideo {
+    background-color: #1addcd;
+}
+div.metaloides {
+    background-color: #a216e7;
+}
+div.gas_nobre{
+    background-color: #bbdf1a;
 }
 div.metal_alcalino{
-    background-color: rgb(255, 208, 0);
+    background-color: #dd1515;
 }
 div.metal_alcalino_terroso{
-    background-color: rgb(255, 242, 168)
-}
-div.elemento{
-    padding: 2px;
-    border: 1px solid black;
-    font-size: 1.09em;
-    width: 66px;
-    height: 66px;
-}
-span.numero {
-    display: block;
-    font-weight: bold;
-    text-align: right;
+    background-color: #d38519;
 
 }
-strong.sigla{
+div.elemento,
+div.legenda_elemento {
+    padding: 1px;
+    margin: 0.5px;
+    font-size: 1em;
+    width: 45px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18),
+    0px 5px 10px rgba(0, 0, 0, 0.18);
+
+}
+span.legenda_numero,
+span.numero {
+    display: block;
+    font-size: 0.8em;
+}
+strong.legenda_sigla,
+strong.sigla {
     font-weight: bolder;
-    font-size: 1.25em;
+    font-size: 1.05em;
+    text-align: center;
+    color: white;
+    text-shadow:2px 2px rgba(0, 0, 0, 0.5)
 }
+p.legenda_nome,
 p.nome{
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
+p.legenda_massa,
 p.massa {
-    text-align: right;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    color: white;
 }
 div.legenda_elemento{
-    padding-left: 3px;
+    background-color: #16df59
+}
+/* div.legenda_elemento{
+    width: 50px;
+    height: 55px;
     box-sizing: border-box;
-}
-span.legenda_numero{
-    display: block;
-    font-size: 1.1em
-}
-strong.legenda_sigla{
-    font-weight: bolder;
-    font-size: 1.25em;
-}
+    text-align: center;
+    background-color: rgb(106, 198, 252);
+} */
 td.legenda{
     display: flex;
     justify-items: center;
@@ -154,11 +196,9 @@ fieldset{
     border-right: 1px solid black;
     margin: 0px 10px;
 }
-legend
-{
+legend{
     text-align: center;
     color: red;
-    font-size: 1.5em;
 }
 div#div_legenda {
     display: flex;
@@ -187,4 +227,151 @@ div#legenda_metal_alcalino_terroso {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+footer {
+    background-color: rgb(106, 198, 252);
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3px 10px;
+    box-shadow: inset 0px 10px 15px 0px rgba(0, 0, 0, 0.18), 0px -3px 10px rgba(0, 0, 0, 0.18);
+    position: absolute;
+    bottom: 0px;
+    box-sizing: border-box;
+}
+div#names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+}
+div#names a {
+    color: black;
+}
+aside {
+    background-color: rgb(106, 198, 252);
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.15), -5px 5px 10px rgba(0, 0, 0, 0.38);
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    height: 120px;
+    width: 190px;
+}
+aside h1 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-bottom: 3px;
+    text-align: center;
+}
+aside div {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0px;
+}
+aside div p {
+    font-size: 0.9em;
+}
+aside div span{
+    font-size: 0.8em;
+    text-decoration: underline;
+}
+
+@media(max-width:970px) {
+    aside div p {
+        font-size: 0.8em;
+    }
+    aside div span {
+        font-size: 0.7em;
+        text-decoration: underline;
+    }
+}
+@media(max-width:860px) {
+    @media(max-width:970px) {
+        aside div p {
+            font-size: 0.7em;
+        }
+        aside div span {
+            font-size: 0.6em;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+@media(max-width:770px) {
+    #container{
+        height: 98%;
+    }
+    header img#ifrs{
+        width: 30px;
+        height: 40px;
+    }
+    header img#sia{
+        width: 40px;
+        height: 40px
+    }
+    header p {
+        font-size: 0.9em
+    }
+}
+
+@media(max-width:705px) {
+    header p {
+        font-size: 0.8em
+    }
+}
+
+@media(max-width:670px) {
+    body, html{
+        height: 100%
+    }
+    header img#ifrs{
+        width: 20px;
+        height: 30px;
+    }
+    header img#sia{
+        width: 30px;
+        height: 30px;
+    }
+    header p:nth-child(2) {
+        width: 150px;
+    }
+    div#divTabela {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+    #tabela {
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    aside {
+        background-color: rgb(106, 198, 252);
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.15), -5px 5px 10px rgba(0, 0, 0, 0.38);
+        padding: 2px;
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        height: 120px;
+        width: 100%;
+    }
+    aside h1{
+        font-size: 1.3em;
+    }
+    aside div p {
+        font-size: 1em;
+    }
+    aside div span{
+        font-size: 1em
+    }
+
 }
