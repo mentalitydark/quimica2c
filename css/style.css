@@ -22,19 +22,20 @@ html, body{
     height: 100%;
 }
 header img#ifrs {
-    width: 40px;
-    height: 50px;
+    width: 20px;
+    height: 30px;
 }
 header img#sia {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 div.separador_header {
-    height: 50px;
+    height: 40px;
     width: 1px;
     /* margin: 30px; */
     background-color: rgba(1, 1, 1, 0.2);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05)
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    font-size: 0.7em;
 }
 #audio img:first-child{
     z-index: 1;
@@ -71,15 +72,14 @@ div#emcima{
     position: absolute;
     top: 0px;
     width: 100%;
-    height: 80px;
+    height: 60px;
 }
 div#divTabela {
     display: flex;
     flex-direction: row;
-    align-items: flex-start
+    align-items: center;
 }
 header {
-    height: 60px;
     background-color: rgb(106, 198, 252);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     display: flex;
@@ -90,15 +90,16 @@ header {
     width: 100%;
     box-sizing: border-box;
     position: absolute;
-    top: 0;
+    font-size: 0.8em;
+    height: 35px;
 }
 
-th:not(:first-child){
+th{
     height: 10px;
     border-left: 1px solid rgb(81, 137, 243);
     border-right: 1px solid rgb(81, 137, 243);
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 0.7em;
     margin-bottom: 20px;
 }
 td.periodo{
@@ -109,60 +110,66 @@ td.periodo{
     vertical-align: middle;
     text-align: left;
 }
-div.metal_de_transicao {
-    background-color: #1e80e2;
+div.nao_metal {
+    background-color: #00ff80;
 }
-div.halogenio {
-    background-color: #bbdd13;
+div.metal_alcalino {
+    background-color: #ff7b00;
 }
-div.lantanideo {
-    background-color: #16df59;
+div.semi_metal {
+    background-color: #abf00b;
 }
 div.outro_metal {
-    background-color: #2514df;
+    background-color: #00d4fa;
 }
-div.nao_metal {
-    background-color: #e014ad;
+div.lantanideos {
+    background-color: #1900ff;
 }
-div.actinideo {
-    background-color: #1addcd;
+div.gas_nobre {
+    background-color: #6f00ff;
 }
-div.metaloides {
-    background-color: #a216e7;
+div.metal_alcalino_terroso {
+    background-color: #aa00ff;
 }
-div.gas_nobre{
-    background-color: #bbdf1a;
+div.halogenio{
+    background-color: #f700ff;
 }
-div.metal_alcalino{
-    background-color: #dd1515;
+div.metal_de_transicao{
+    background-color: #ff0022;
 }
-div.metal_alcalino_terroso{
-    background-color: #d38519;
+div.actinidios{
+    background-color: #08b1a9;
 
 }
 div.elemento,
 div.legenda_elemento {
-    padding: 1px;
-    margin: 0.5px;
-    font-size: 1em;
     width: 45px;
-    height: 50px;
+    height: 45px;
     box-sizing: border-box;
     text-align: center;
     color: white;
-    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18),
-    0px 5px 10px rgba(0, 0, 0, 0.18);
-
+    margin: 0.4px;
+    padding: 0.5px;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+}
+.selecionado {
+    border:1px solid #00d4fa;
+}
+td.MTI {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.7em
 }
 span.legenda_numero,
 span.numero {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.6em;
+    font-weight: bold
 }
 strong.legenda_sigla,
 strong.sigla {
     font-weight: bolder;
-    font-size: 1.05em;
+    font-size: 0.9em;
     text-align: center;
     color: white;
     text-shadow:2px 2px rgba(0, 0, 0, 0.5)
@@ -173,7 +180,7 @@ p.nome{
 }
 p.legenda_massa,
 p.massa {
-    font-size: 0.7em;
+    font-size: 0.5em;
     color: white;
 }
 div.legenda_elemento{
@@ -230,7 +237,7 @@ div#legenda_metal_alcalino_terroso {
 }
 footer {
     background-color: rgb(106, 198, 252);
-    height: 8%;
+    height: 30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -240,6 +247,7 @@ footer {
     position: absolute;
     bottom: 0px;
     box-sizing: border-box;
+    font-size: 0.6em
 }
 div#names {
     display: flex;
@@ -260,7 +268,7 @@ aside {
     width: 190px;
 }
 aside h1 {
-    font-size: 1.2em;
+    font-size: 0.9em;
     text-decoration: underline;
     margin-bottom: 3px;
     text-align: center;
@@ -268,7 +276,7 @@ aside h1 {
 aside div {
     display: flex;
     flex-direction: row;
-    font-size: 0.9em;
+    font-size: 0.8em;
     justify-content: space-between;
     align-items: center;
     width: 100%;

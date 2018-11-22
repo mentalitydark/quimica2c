@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Química Info</title>
+    <title>prototipo</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/icones/Logo.png">
 </head>
-
 <body>
     <div id="container">
         <div id="emcima">
@@ -33,340 +30,21 @@
         </div>
         <div id="divTabela">
             <div id="tabela">
-                <table>
-                    <thead id="familia">
-                        <tr id="a1_periodo">
-                            <th class="perido"></th>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                            <th>4</th>
-                            <th>5</th>
-                            <th>6</th>
-                            <th>7</th>
-                            <th>8</th>
-                            <th>9</th>
-                            <th>10</th>
-                            <th>11</th>
-                            <th>12</th>
-                            <th>13</th>
-                            <th>14</th>
-                            <th>15</th>
-                            <th>16</th>
-                            <th>17</th>
-                            <th>18</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="periodo">1</td>
-                            <td>
-                                <div class="elemento nao_metal">
-                                    <span class="numero">1</span>
-                                    <strong class="sigla">H</strong>
-                                    <p class="nome">Hidrogênio</p>
-                                    <p class="massa">1,008</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="legenda_elemento">
-                                    <span class="legenda_numero">Atômico</span>
-                                    <strong class="legenda_sigla">Sigla</strong>
-                                    <p class="legenda_nome">Nome</p>
-                                    <p class="legenda_massa">Massa</p>
-                                </div>
-                            </td>
-                            <td colspan="10" rowspan="3" id="legenda">
-                                <div>
-                                <fieldset>
-                                    <legend>Legenda</legend>
-                                    <div id="elemento_em_destaque"></div>
-                                    <div id="div_legenda">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div id="legenda_metal_alcalino">
-                                                                <span>Metais alcalinos</span>
-                                                                <div class="legenda_metal_alcalino"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div id="legenda_metal_alcalino_terroso">
-                                                                <span>Metais alcalinos terrosos</span>
-                                                                <div class="legenda_metal_alcalino_terroso"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                </fieldset>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="periodo">2</td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino_terroso">
-                                    <span class="numero">4</span>
-                                    <strong class="sigla">Be</strong>
-                                    <p class="nome">Berílio</p>
-                                    <p class="massa">9,01</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="periodo">3</td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">11</span>
-                                    <strong class="sigla">Na</strong>
-                                    <p class="nome">Sódio</p>
-                                    <p class="massa">22,99</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino_terroso">
-                                    <span class="numero">12</span>
-                                    <strong class="sigla">Mg</strong>
-                                    <p class="nome">Magnésio</p>
-                                    <p class="massa">24,30</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="periodo">4</td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">19</span>
-                                    <strong class="sigla">K</strong>
-                                    <p class="nome">Potássio</p>
-                                    <p class="massa">39,10</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino_terroso">
-                                    <span class="numero">20</span>
-                                    <strong class="sigla">Ca</strong>
-                                    <p class="nome">Cálcio</p>
-                                    <p class="massa">40,08</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_de_transicao">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento halogenio">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento lantanideo">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento outro_metal">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento nao_metal">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento actinideo">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento gas_nobre">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">19</span>
-                                    <strong class="sigla">K</strong>
-                                    <p class="nome">Potássio</p>
-                                    <p class="massa">39,10</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">3</span>
-                                    <strong class="sigla">Li</strong>
-                                    <p class="nome">Lítio</p>
-                                    <p class="massa">6,997</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="periodo">5</td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">37</span>
-                                    <strong class="sigla">Rb</strong>
-                                    <p class="nome">Rubídio</p>
-                                    <p class="massa">85,47</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino_terroso">
-                                    <span class="numero">38</span>
-                                    <strong class="sigla">Sr</strong>
-                                    <p class="nome">Estrôncio</p>
-                                    <p class="massa">87,62</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="periodo">6</td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">55</span>
-                                    <strong class="sigla">Cs</strong>
-                                    <p class="nome">Césio</p>
-                                    <p class="massa">132,91</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino_terroso">
-                                    <span class="numero">56</span>
-                                    <strong class="sigla">Ba</strong>
-                                    <p class="nome">Bário</p>
-                                    <p class="massa">137,33</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="periodo">7</td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <span class="numero">87</span>
-                                    <strong class="sigla">Fr</strong>
-                                    <p class="nome">Frâncio</p>
-                                    <p class="massa">223</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="elemento metal_alcalino_terroso">
-                                    <span class="numero">88</span>
-                                    <strong class="sigla">Ra</strong>
-                                    <p class="nome">Rádio</p>
-                                    <p class="massa">226</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                                <td class="periodo">8</td>
-                                <td>
-                                    <div class="elemento metal_alcalino">
-                                        <p>a</p>
-                                    </div>
-                                </td>
-                        </tr>
-                        <tr>
-                            <td class="periodo">9</td>
-                            <td>
-                                <div class="elemento metal_alcalino">
-                                    <p>a</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table>
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
             </div>
             <aside>
                 <h1>Atalhos:</h1>
@@ -396,14 +74,18 @@
         <footer>
             <span>Desenvolvimento Baseado em Objetos</span>
             <div id="names">
-                <span>Desenvolvedores:</span>
-                <a href="www.github.com/mentalitydark">Guilherme Oliveira</a>
-                <a href="www.github.com/Ig0rD">Igor Dutra</a>
-                <a href="www.github.com/luansvxm">Luan Vieira</a>
+                <div>
+                    <span>Desenvolvedores:</span>
+                    <a href="www.github.com/mentalitydark">Guilherme Oliveira,</a>
+                </div>
+                <div>
+                    <a href="www.github.com/Ig0rD">Igor Dutra,</a>
+                    <a href="www.github.com/luansvxm">Luan Vieira</a>
+                </div>
             </div>
         </footer>
     </div>
     <script src="./js/main.js" type="module"></script>
+    <script src="./js/function/movteclado.js" type="module"></script>
 </body>
-
 </html>
