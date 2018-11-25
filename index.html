@@ -47,29 +47,73 @@
                         </tbody>
                     </table>
             </div>
-            <aside>
-                <h1>Atalhos:</h1>
-                <div>
-                    <p>Navegar pela família:</p>
-                    <span>Cima ou baixo</span>
+            <div>
+                <aside>
+                    <h1>Atalhos:</h1>
+                    <div>
+                        <p>Navegar pela família:</p>
+                        <span>Cima ou baixo</span>
+                    </div>
+                    <div>
+                        <p>Navegar entra as famílias:</p>
+                        <span>esquerda ou direita</span>
+                    </div>
+                    <div>
+                        <p>Ativar áudio:</p>
+                        <span>Espaço</span>
+                    </div>
+                    <div>
+                        <p>Selecionar elemento:</p>
+                        <span>Enter</span>
+                    </div>
+                    <div>
+                        <p>Tabela de cátions e ânios</p>
+                        <span>T</span>
+                    </div>
+                </aside>
+                <div id="legenda">
+                    <div class="legenda_destaque">
+                        <span>Não Metais</span>
+                        <div class="elemento_legenda nao_metal"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Metais Alcalinos</span>
+                        <div class="elemento_legenda metal_alcalino"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Metais Alcalinos Terroros</span>
+                        <div class="elemento_legenda metal_alcalino_terroso"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Metais de Transições</span>
+                        <div class="elemento_legenda metal_de_transicao"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Metais Representativos</span>
+                        <div class="elemento_legenda metal_representativo"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Semi-Metais</span>
+                        <div class="elemento_legenda semi_metal"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Halogênios</span>
+                        <div class="elemento_legenda halogenio"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Gases Nobres</span>
+                        <div class="elemento_legenda gas_nobre"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Lantanídeos</span>
+                        <div class="elemento_legenda lantanideos"></div>
+                    </div>
+                    <div class="legenda_destaque">
+                        <span>Actinídeos</span>
+                        <div class="elemento_legenda actinideos"></div>
+                    </div>
                 </div>
-                <div>
-                    <p>Navegar entra as famílias:</p>
-                    <span>esquerda ou direita</span>
-                </div>
-                <div>
-                    <p>Ativar áudio:</p>
-                    <span>Espaço</span>
-                </div>
-                <div>
-                    <p>Selecionar elemento:</p>
-                    <span>Enter</span>
-                </div>
-                <div>
-                    <p>Tabela de cátions e ânios</p>
-                    <span>T</span>
-                </div>
-            </aside>
+            </div>
         </div>
 
         <footer>
@@ -89,5 +133,7 @@
     <script src="./js/main.js" type="module"></script>
     <script src="./js/function/movteclado.js" type="module"></script>
     <script src="./js/event/mover.js" type="module"></script>
+    <script src="./js/event/destaqueFalse.js" type="module"></script>
+    <script src="./js/event/destaqueTrue.js" type="module"></script>
 </body>
 </html>

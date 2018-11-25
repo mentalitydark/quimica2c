@@ -7,7 +7,7 @@ export function GeradorTabela(tabela, elementos, tbody) {
                     const td = document.createElement('td');
                     td.setAttribute('colspan', 10);
                     td.setAttribute('rowspan', 2);
-                    td.className = 'zquadrado';
+                    td.className = 'hover';
                     const div = document.createElement('div');
                     td.appendChild(div);
                     tr.appendChild(td);

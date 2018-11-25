@@ -15,7 +15,6 @@ header img#sia {
 div.separador_header {
     height: 40px;
     width: 1px;
-    /* margin: 30px; */
     background-color: rgba(1, 1, 1, 0.2);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
     font-size: 0.7em;
@@ -44,7 +43,6 @@ div.separador_header {
     justify-content: center;
 }
 #tabela{
-    overflow: auto;
     margin-left:auto;
     margin-right:auto;
     display: flex;
@@ -61,6 +59,7 @@ div#divTabela {
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 0;
 }
 header {
     background-color: rgb(106, 198, 252);
@@ -85,50 +84,85 @@ th{
     font-size: 0.7em;
 }
 div.nao_metal {
-    background-color: #00ff80;
+    background-color: #4d05ac;
+    transition: 0.3s
 }
 div.metal_alcalino {
-    background-color: #ff7b00;
+    background-color: #fac000;
+    transition: 0.3s
 }
 div.semi_metal {
-    background-color: #abf00b;
+    background-color: #8ac207;
+    transition: 0.3s
 }
-div.outro_metal {
-    background-color: #00d4fa;
+div.metal_representativo {
+    background-color: #02aecc;
+    transition: 0.3s
 }
 div.lantanideos {
-    background-color: #1900ff;
+    background-color: #4539b1;
+    transition: 0.3s
 }
 div.gas_nobre {
     background-color: #6f00ff;
+    transition: 0.3s
 }
 div.metal_alcalino_terroso {
-    background-color: #aa00ff;
+    background-color: #c4b707;
+    transition: 0.3s
 }
 div.halogenio{
-    background-color: #f700ff;
+    background-color: #c107c7;
+    transition: 0.3s
 }
 div.metal_de_transicao{
-    background-color: #ff0022;
+    background-color: #b30119;
+    transition: 0.3s
 }
-div.actinidios{
-    background-color: #08b1a9;
+div.actinideos{
+    background-color: #05817b;
+    transition: 0.3s
 
 }
-div.elemento,
-div.legenda_elemento {
+div#legenda {
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+    background-color: rgba(106, 198, 252, .5);
+    font-size: 0.9em;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+    padding: 2px;
+}
+div#legenda > div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center
+}
+div.elemento_legenda{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+}
+div.elemento{
     width: 50px;
     height: 50px;
     box-sizing: border-box;
     text-align: center;
     color: white;
     margin: 0.4px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0.5px;
     box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+    z-index: 0;
 }
 .selecionado {
-    border:1px solid #00d4fa;
+    border-top: 2px dashed red;
+    border-left: 2px dashed red;
+    border-right: 2px dashed red;
+    border-bottom: 1px dashed red
 }
 td.MTI {
     text-align: center;
@@ -137,13 +171,11 @@ td.MTI {
     font-weight: bold;
     text-decoration: underline
 }
-span.legenda_numero,
 span.numero {
     display: block;
     font-size: 0.7em;
     font-weight: bold
 }
-strong.legenda_sigla,
 strong.sigla {
     font-weight: bolder;
     font-size: 0.9em;
@@ -151,69 +183,24 @@ strong.sigla {
     color: white;
     text-shadow:2px 2px rgba(0, 0, 0, 0.5)
 }
-p.legenda_nome,
 p.nome{
     font-size: 0.6em;
     margin: 2px 0px;
 }
-p.legenda_massa,
 p.massa {
     font-size: 0.6em;
     color: white;
 }
-div.legenda_elemento{
-    background-color: #16df59
-}
-/* div.legenda_elemento{
-    width: 50px;
-    height: 55px;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: rgb(106, 198, 252);
-} */
 td.legenda{
     display: flex;
     justify-items: center;
     align-items: center;
 }
-fieldset{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    margin: 0px 10px;
-}
-legend{
-    text-align: center;
-    color: red;
-}
 div#div_legenda {
     display: flex;
     justify-content: flex-end;
 }
-div.legenda_metal_alcalino{
-    width: 20px;
-    border: 1px solid black;
-    height: 20px;
-    margin-left: 5px;
-    background-color: rgb(255, 208, 0);
-}
-div#legenda_metal_alcalino{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-div.legenda_metal_alcalino_terroso{
-    width: 20px;
-    border: 1px solid black;
-    height: 20px;
-    margin-left: 5px;
-    background-color: rgb(255, 242, 168);
-}
-div#legenda_metal_alcalino_terroso {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-div.lantanideos {
+div.elemento.lantanideos {
     margin-top: 5px;
 }
 footer {
@@ -282,104 +269,19 @@ div.sc {
     transition-delay: 0.1s;
     transition-duration: 0.2s;
     transition-property: all;
-    font-size: 2.5em;
-    width: 120px;
-    height: 120px;
-    position: fixed;
+    transform: scale(2.5);
     z-index: 1;
 }
-
-
-@media(max-width:970px) {
-    aside div p {
-        font-size: 0.8em;
-    }
-    aside div span {
-        font-size: 0.7em;
-        text-decoration: underline;
-    }
+div.invisivel {
+    transition: 0.3s;
+    opacity: 0.2;
 }
-@media(max-width:860px) {
-    @media(max-width:970px) {
-        aside div p {
-            font-size: 0.7em;
-        }
-        aside div span {
-            font-size: 0.6em;
-            text-decoration: underline;
-        }
-    }
-
-}
-
-@media(max-width:770px) {
-    #container{
-        height: 98%;
-    }
-    header img#ifrs{
-        width: 30px;
-        height: 40px;
-    }
-    header img#sia{
-        width: 40px;
-        height: 40px
-    }
-    header p {
-        font-size: 0.9em
-    }
-}
-
-@media(max-width:705px) {
-    header p {
-        font-size: 0.8em
-    }
-}
-
-@media(max-width:670px) {
-    body, html{
-        height: 100%
-    }
-    header img#ifrs{
-        width: 20px;
-        height: 30px;
-    }
-    header img#sia{
-        width: 30px;
-        height: 30px;
-    }
-    header p:nth-child(2) {
-        width: 150px;
-    }
-    div#divTabela {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start
-    }
-    #tabela {
-        overflow: auto;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-    aside {
-        background-color: rgb(106, 198, 252);
-        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.15), -5px 5px 10px rgba(0, 0, 0, 0.38);
-        padding: 2px;
-        box-sizing: border-box;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        height: 120px;
-        width: 100%;
-    }
-    aside h1{
-        font-size: 1.3em;
-    }
-    aside div p {
-        font-size: 1em;
-    }
-    aside div span{
-        font-size: 1em
-    }
-
+.elemento:hover{
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transform: scale(2);
+    z-index: 3;
 }
