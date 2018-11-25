@@ -1,23 +1,6 @@
 /*  RPG Base 76B3D7
     http: //paletton.com/#uid=23u0u0kflNj0LRA14OAt+VMu+Um
 */
-/* tr:hover{
-    border: 1px solid cyan
-}
-td:hover{
-    position: relative;
-}
-td:hover:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    bottom: 100%;
-    background-color: rgba(247, 17, 17, 0.2);
-    z-index: 1;
-
-} */
 html, body{
     height: 100%;
 }
@@ -100,15 +83,6 @@ th{
     border-right: 1px solid rgb(81, 137, 243);
     font-weight: bolder;
     font-size: 0.7em;
-    margin-bottom: 20px;
-}
-td.periodo{
-    width: 20px;
-    height: 10px;
-    font-weight: bolder;
-    font-size: 1.5em;
-    vertical-align: middle;
-    text-align: left;
 }
 div.nao_metal {
     background-color: #00ff80;
@@ -143,12 +117,13 @@ div.actinidios{
 }
 div.elemento,
 div.legenda_elemento {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     box-sizing: border-box;
     text-align: center;
     color: white;
     margin: 0.4px;
+    border-radius: 5px;
     padding: 0.5px;
     box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
 }
@@ -158,12 +133,14 @@ div.legenda_elemento {
 td.MTI {
     text-align: center;
     vertical-align: middle;
-    font-size: 0.7em
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: underline
 }
 span.legenda_numero,
 span.numero {
     display: block;
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: bold
 }
 strong.legenda_sigla,
@@ -176,11 +153,12 @@ strong.sigla {
 }
 p.legenda_nome,
 p.nome{
-    font-size: 0.5em;
+    font-size: 0.6em;
+    margin: 2px 0px;
 }
 p.legenda_massa,
 p.massa {
-    font-size: 0.5em;
+    font-size: 0.6em;
     color: white;
 }
 div.legenda_elemento{
@@ -235,6 +213,9 @@ div#legenda_metal_alcalino_terroso {
     align-items: center;
     justify-content: flex-end;
 }
+div.lantanideos {
+    margin-top: 5px;
+}
 footer {
     background-color: rgb(106, 198, 252);
     height: 30px;
@@ -261,11 +242,12 @@ div#names a {
 aside {
     background-color: rgb(106, 198, 252);
     box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.15), -5px 5px 10px rgba(0, 0, 0, 0.38);
-    padding: 2px;
+    padding: 4px;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.4);
     height: 120px;
     width: 190px;
+    margin-right: 10px;
 }
 aside h1 {
     font-size: 0.9em;
@@ -289,6 +271,24 @@ aside div span{
     font-size: 0.8em;
     text-decoration: underline;
 }
+td {
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+.destaque {
+    border: 1.6px solid rgba(0, 0, 0, 0);
+}
+div.sc {
+    transform: translate3d(-30px, -20px, 0);
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    font-size: 2.5em;
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    z-index: 1;
+}
+
 
 @media(max-width:970px) {
     aside div p {

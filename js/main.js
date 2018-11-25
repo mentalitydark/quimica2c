@@ -27,45 +27,13 @@ const row = [];
 const tr = document.createElement('tr');
 
 for (let i=1; i <= 18; i++) {
+    const familia = ['', 'I A', 'II A', 'III B', 'IV B', 'V B', 'VI B', 'VII B', 'VIII B', 'VIII B', 'VIII B',
+                     'III B', 'II B', 'III A', 'IV A', 'V A', 'VI A', 'VII A', 'VIII A'];
     const th = document.createElement('th');
     row.push(th);
-    //   th.className = 'F' +i;
-    th.textContent = 'F'+i;
+    th.textContent = familia[i];
     th.className = 'f'+i;
     tr.appendChild(th);
     thead.appendChild(tr);
 }
 GeradorTabela(tabela, elementos, tbody);
-let a = 0;
-document.addEventListener('keydown', function(e) {
-    if (e.keyCode === 39) {
-        a++;
-        if (a >= 19) {
-            a = 1
-            ;
-        }
-        document.querySelectorAll('th').forEach(function(th) {
-            th.classList.remove('selecionado')
-            ;
-        });
-        document.querySelectorAll('.f'+(a)).forEach(function(td) {
-            td.classList.add('selecionado');
-        });
-    }
-    if (e.keyCode === 37) {
-        a--;
-        if (a <=0) {
-            a = 18;
-        }
-        if (a >= 19) {
-            a = 1;
-        }
-        document.querySelectorAll('th').forEach(function(th) {
-            th.classList.remove('selecionado');
-        });
-        document.querySelectorAll('.f'+(a)).forEach(function(th) {
-            th.classList.add('selecionado');
-        });
-    }
-});
-
