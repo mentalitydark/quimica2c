@@ -1,4 +1,5 @@
-import {elementos} from './element/elementos.js';
+import {elementos_1} from './element/elementos_1.js';
+import {elementos_2} from './element/elementos_2.js';
 import {GeradorTabela} from './function/gerador.js';
 const tbody = document.querySelector('tbody');
 const thead = document.querySelector('thead');
@@ -22,7 +23,7 @@ const tabela = [
     ['', 8, 16, 34, 52, 84, 116, 69, 101],
     [1, 9, 17, 35, 53, 85, 117, 70, 102],
 ];
-
+console.log(tabela.length)
 const row = [];
 const tr = document.createElement('tr');
 
@@ -36,4 +37,4 @@ for (let i=1; i <= 18; i++) {
     tr.appendChild(th);
     thead.appendChild(tr);
 }
-GeradorTabela(tabela, elementos, tbody);
+GeradorTabela(tabela, elementos_1, elementos_2, tbody);

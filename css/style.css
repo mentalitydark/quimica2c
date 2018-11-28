@@ -35,22 +35,18 @@ div.dropdown-content {
 div.dropdown-content > div {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 2px;
     width: 110px;
     transition-duration: 0.2s;
     transition-delay: 0s;
     transition-property: all;
 }
+div.dropdown-content > div > span:last-child {
+    font-size: 0.8em
+}
 div.dropdown-content > div:not(:first-child) {
     border-top: 1px solid rgba(0,0,0,.2)
-}
-div.dropdown-content > div:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 0.7);
-}
-div.dropdown:hover div.dropdown-content {
-    display: block;
 }
 .dropupbtn {
     padding: 14px;
@@ -77,10 +73,6 @@ div.dropdown:hover div.dropdown-content {
     text-align: right;
     display: block;
 }
-.dropup-content a:hover {background-color: #ccc}
-.dropup:hover .dropup-content {
-    display: block;
-}
 
 div.separador_header {
     height: 35px;
@@ -96,8 +88,6 @@ div.separador_header {
     width: 20px;
     height: 20px;
     margin-left: 10px;
-    position: absolute;
-    bottom: 0;
 }
 #audio img{
     position: absolute;
@@ -121,9 +111,10 @@ div.separador_header {
 div#emcima{
     display: flex;
     position: absolute;
+    flex-direction: column;
     top: 0px;
     width: 100%;
-    height: 60px;
+    height: 50px;
 }
 div#divTabela {
     display: flex;
@@ -141,7 +132,6 @@ header {
     box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
     width: 100%;
     box-sizing: border-box;
-    position: absolute;
     font-size: 0.8em;
     height: 35px;
 }
@@ -185,8 +175,7 @@ div.actinideos{
 
 }
 div#legenda {
-    margin-top: 5px;
-    margin-right: 10px;
+    margin: 5px 0px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: rgba(106, 198, 252, .5);
     font-size: 0.9em;
@@ -294,7 +283,6 @@ aside {
     border: 1px solid rgba(0, 0, 0, 0.25);
     height: 120px;
     width: 190px;
-    margin-right: 10px;
     transition: all 0.2s ease-in;
 }
 aside h1 {
@@ -322,6 +310,20 @@ aside div span{
 td {
     border: 2px solid rgba(0, 0, 0, 0);
 }
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px
+}
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(106, 198, 252, 0.9);
+    background-color: rgba(106, 198, 252, .7);
+    cursor: pointer;
+    box-shadow: inset 0px -1px 20px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+}
 .destaque {
     border: 1.6px solid rgba(0, 0, 0, 0);
 }
@@ -336,27 +338,4 @@ div.sc {
 div.invisivel {
     transition: 0.3s;
     opacity: 0.2;
-}
-aside:hover {
-    transition: 0.2s all 1s ease-in;
-    transform: scale(1.3) translate(-21.3px, -8.5px);
-}
-.elemento:hover{
-    transform: translate3d(6px, -6px, 0);
-    transition-delay: 0.3s;
-    transition-duration: 0.2s;
-    transition-property: all;
-    transition-timing-function: ease;
-    transform: scale(2);
-    z-index: 1;
-}
-.legenda_destaque:hover {
-    z-index: 1;
-    padding: 1px;
-    transform: translate3d(4px, -3px, 0);
-    border: 1px solid rgba(65, 110, 194, 0.4);
-    transition: all 0.2s ease;
-    box-shadow: rgba(65, 110, 194, 0.6) -1px 1px,
-                rgba(65, 110, 194, 0.6) -2px 2px,
-                rgba(65, 110, 194, 0.6) -3px 3px;
 }
