@@ -23,7 +23,6 @@ const tabela = [
     ['', 8, 16, 34, 52, 84, 116, 69, 101],
     [1, 9, 17, 35, 53, 85, 117, 70, 102],
 ];
-console.log(tabela.length)
 const row = [];
 const tr = document.createElement('tr');
 
