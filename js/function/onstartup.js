@@ -5,9 +5,9 @@ export const lang = ['Brazilian Portuguese Female', 'Brazilian Portuguese Male',
 let flag = true;
 export function blindmode(cb) {
     let decision;
-    responsiveVoice.speak(`Deseja ativar o modo
-     adaptado para cegos? Pressione S para sim,
-      e N para não`, lang[0], {
+    responsiveVoice.speak(`Deseja ativar o modo adaptado para cegos?
+    Caso queira ativar, aperte a tecla S ou
+    caso queira não ativar, aperte a tecla N.`, lang[1], {
         rate: 1
     });
     document.addEventListener('keydown', blindModeEvent);
