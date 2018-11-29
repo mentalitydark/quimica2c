@@ -1,9 +1,8 @@
-export function GeradorTabela(tabela, elementos1, elementos2, tbody) {
+export function geradorTabela(tabela, elementos, tbody) {
     for (let a = 0; a < tabela.length; a++) {
         for (let i = 0; i < tbody.children.length && i < tabela.length; i++) {
             if (i >= 0 && i < 10) {
-                let elementNumber = tabela[a][i];
-                if (elementNumber === '' && a === 2 && i === 0) {
+                if (tabela[a][i] === '' && a === 2 && i === 0) {
                     const tr = tbody.children[i];
                     const td = document.createElement('td');
                     td.setAttribute('colspan', 10);
@@ -13,7 +12,7 @@ export function GeradorTabela(tabela, elementos1, elementos2, tbody) {
                     td.appendChild(div);
                     tr.appendChild(td);
                 }
-                if (elementNumber === '' && a === 1 && i === 0) {
+                if (tabela[a][i] === '' && a === 1 && i === 0) {
                     const tr = tbody.children[i];
                     const td = document.createElement('td');
                     const div = document.createElement('div');
@@ -22,8 +21,9 @@ export function GeradorTabela(tabela, elementos1, elementos2, tbody) {
                     tr.appendChild(td);
                 }
 
-                if (elementNumber !== '' &&
-            elementNumber !== '*' && elementNumber !== '**' && elementNumber !== 'MTI') {
+                if (tabela[a][i] !== '' &&
+                    tabela[a][i] !== '*' && tabela[a][i] !==
+                    '**' && tabela[a][i] !== 'MTI') {
                     const tr = tbody.children[i];
                     const td = document.createElement('td');
                     const div = document.createElement('div');
@@ -31,12 +31,7 @@ export function GeradorTabela(tabela, elementos1, elementos2, tbody) {
                     const strong = document.createElement('strong');
                     const p = document.createElement('p');
                     const p2 = document.createElement('p');
-                    let element = 0;
-                    if (elementNumber <= 95) {
-                        element = elementos1[elementNumber];
-                    } else {
-                        element = elementos2[elementNumber-(elementNumber-1)];
-                    }
+                    const element = elementos[tabela[a][i]];
                     span.textContent = element.atomico;
                     strong.textContent = element.sigla;
                     p.textContent = element.nome;
@@ -54,7 +49,7 @@ export function GeradorTabela(tabela, elementos1, elementos2, tbody) {
                     td.className = `cor F${a+1}`;
                     tr.appendChild(td);
                 }
-                if (elementNumber === '' && a > 10 && a < 16 && i === 0) {
+                if (tabela[a][i] === '' && a > 10 && a < 16 && i === 0) {
                     const tr = tbody.children[i];
                     const td = document.createElement('td');
                     const div = document.createElement('div');
@@ -62,20 +57,21 @@ export function GeradorTabela(tabela, elementos1, elementos2, tbody) {
                     td.appendChild(div);
                     tr.appendChild(td);
                 }
-                if (elementNumber === '*' || elementNumber === '**' || elementNumber === 'MTI' ) {
+                if (tabela[a][i] === '*' || tabela[a][i] ===
+                    '**' || tabela[a][i] === 'MTI') {
                     const tr = tbody.children[i];
                     const td = document.createElement('td');
                     const div = document.createElement('div');
                     td.className = 'MTI';
-                    if (elementNumber === '*') {
-                        div.textContent = '57 - 71'
-                    } else if (elementNumber === '**'){
+                    if (tabela[a][i] === '*') {
+                        div.textContent = '57 - 71';
+                    } else if (tabela[a][i] === '**') {
                         div.textContent = '89 - 103';
                     }
                     td.appendChild(div);
                     tr.appendChild(td);
                 }
-                if (elementNumber === '' && a >= 0 && a < 16 && i === 2) {
+                if (tabela[a][i] === '' && a >= 0 && a < 16 && i === 2) {
                     const tr = tbody.children[i];
                     const td = document.createElement('td');
                     const div = document.createElement('div');
@@ -83,6 +79,10 @@ export function GeradorTabela(tabela, elementos1, elementos2, tbody) {
                     td.appendChild(div);
                     tr.appendChild(td);
                 }
+                // if (tabela[a][i] === '' && (i === 7 || i === 8)) {
+                //     console.log('tnc');
+
+                // }
             }
         }
     }

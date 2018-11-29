@@ -1,6 +1,20 @@
-import {elementos_1} from './element/elementos_1.js';
-import {elementos_2} from './element/elementos_2.js';
-import {GeradorTabela} from './function/gerador.js';
+import {
+    elementos
+} from './element/elementos.js';
+import {
+    geradorTabela
+} from './function/gerador.js';
+import {
+    blindmode
+} from './function/onstartup.js';
+import {
+    mouse
+} from './function/mouseselect.js';
+import {
+    overlayGenElement,
+    overlayGenTab
+} from './function/overlay.js';
+const button = document.querySelector('button');
 const tbody = document.querySelector('tbody');
 const thead = document.querySelector('thead');
 const tabela = [
@@ -23,17 +37,38 @@ const tabela = [
     ['', 8, 16, 34, 52, 84, 116, 69, 101],
     [1, 9, 17, 35, 53, 85, 117, 70, 102],
 ];
+
 const row = [];
 const tr = document.createElement('tr');
 
-for (let i=1; i <= 18; i++) {
-    const familia = ['', 'I A', 'II A', 'III B', 'IV B', 'V B', 'VI B', 'VII B', 'VIII B', 'VIII B', 'VIII B',
-                     'III B', 'II B', 'III A', 'IV A', 'V A', 'VI A', 'VII A', 'VIII A'];
+for (let i = 1; i <= 18; i++) {
+    const familia = ['', 'I A', 'II A', 'III B',
+        'IV B', 'V B', 'VI B', 'VII B', 'VIII B',
+        'VIII B', 'VIII B',
+        'III B', 'II B', 'III A', 'IV A', 'V A',
+        'VI A', 'VII A', 'VIII A'
+    ];
     const th = document.createElement('th');
     row.push(th);
     th.textContent = familia[i];
-    th.className = 'f'+i;
+    th.className = 'f' + i;
     tr.appendChild(th);
     thead.appendChild(tr);
 }
-GeradorTabela(tabela, elementos_1, elementos_2, tbody);
+geradorTabela(tabela, elementos, tbody);
+
+blindmode(function(decision) {
+    // console.log(decision);
+    if (decision === true) {
+        console.log('Modo para cegos');
+    } else {
+        responsiveVoice.cancel();
+        console.log('Modo para não cegos');
+        button.addEventListener('click', function() {
+            overlayGenTab(tbody);
+        });
+        mouse(function(nat) {
+            overlayGenElement(nat * 1, tbody);
+        });
+    }
+});
