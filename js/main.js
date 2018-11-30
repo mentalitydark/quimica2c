@@ -1,19 +1,8 @@
-import {
-    elementos
-} from './element/elementos.js';
-import {
-    geradorTabela
-} from './function/gerador.js';
-import {
-    blindmode
-} from './function/onstartup.js';
-import {
-    mouse
-} from './function/mouseselect.js';
-import {
-    overlayGenElement,
-    overlayGenTab
-} from './function/overlay.js';
+import {elementos} from './element/elementos.js';
+import {geradorTabela} from './function/gerador.js';
+import {blindmode} from './function/onstartup.js';
+import {mouse} from './function/mouseselect.js';
+import {overlayGenElement, overlayGenTab} from './function/overlay.js';
 const button = document.querySelector('button');
 const tbody = document.querySelector('tbody');
 const thead = document.querySelector('thead');
@@ -72,3 +61,15 @@ blindmode(function(decision) {
         });
     }
 });
+document.addEventListener('click', function (event) {
+    let acao = (event.target.parentElement);
+    if (acao.id === 'audio') {
+        if (acao.children[1].style.zIndex === '2') {
+            acao.children[1].style.zIndex = 0;
+            acao.children[0].style.zIndex = 1;
+        } else {
+            acao.children[1].style.zIndex = 2;
+            acao.children[0].style.zIndex = 0;
+        }
+    }
+})
