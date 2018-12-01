@@ -1,4 +1,8 @@
 /* eslint-disable max-statements */
+import {
+    audioElemento,
+    audioFamilia
+} from './audio.js';
 const mover = [0, 0]; // mover
 let enter = true;
 let bloco = true;
@@ -19,6 +23,7 @@ export function moverteclado(cb, trave) {
             document.querySelectorAll('.f' + (mover[0])).forEach(function(td) {
                 td.classList.add('selecionado');
             });
+            audioFamilia(document.querySelector('.selecionado'));
         }
         if (e.keyCode === 37 && enter === true && bloco === true) {
             mover[0]--;
@@ -34,10 +39,11 @@ export function moverteclado(cb, trave) {
             document.querySelectorAll('.f' + (mover[0])).forEach(function(th) {
                 th.classList.add('selecionado');
             });
+            audioFamilia(document.querySelector('.selecionado'));
         }
         if (e.keyCode === 13 && enter === false && trava === true) {
-            cb((document.querySelector('.sc'
-            ).firstElementChild.textContent)*1);
+            cb((document.querySelector('.sc').firstElementChild.textContent
+            ) * 1);
             bloco = false;
             trava = false;
         }
@@ -48,7 +54,8 @@ export function moverteclado(cb, trave) {
                 td.classList.add('destaque');
             });
             document.querySelectorAll('.F' +
-            (mover[0]))[mover[1]].children[0].classList.add('sc');
+                (mover[0]))[mover[1]].children[0].classList.add('sc');
+            audioElemento(document.querySelector('.sc'));
         }
         if (e.keyCode === 40 && enter === false && trava === true) {
             document.querySelectorAll('div').forEach(function(div) {
@@ -60,7 +67,8 @@ export function moverteclado(cb, trave) {
                 mover[1] = 0;
             }
             document.querySelectorAll('.F' +
-            (mover[0]))[mover[1]].children[0].classList.add('sc');
+                (mover[0]))[mover[1]].children[0].classList.add('sc');
+            audioElemento(document.querySelector('.sc'));
         }
         if (e.keyCode === 38 && enter === false && trava === true) {
             document.querySelectorAll('div').forEach(function(div) {
@@ -72,7 +80,8 @@ export function moverteclado(cb, trave) {
                 mover[1] = limit - 1;
             }
             document.querySelectorAll('.F' +
-            (mover[0]))[mover[1]].children[0].classList.add('sc');
+                (mover[0]))[mover[1]].children[0].classList.add('sc');
+            audioElemento(document.querySelector('.sc'));
         }
         if (e.keyCode === 27 && enter === false && bloco === true) {
             document.querySelectorAll('div').forEach(function(div) {
@@ -83,8 +92,9 @@ export function moverteclado(cb, trave) {
             });
             enter = true;
             mover[1] = 0;
+            responsiveVoice.cancel();
         }
-        if ( e.keyCode === 27 && bloco === false) {
+        if (e.keyCode === 27 && bloco === false) {
             bloco = true;
             trava = true;
             document.querySelector('.sair').click();
