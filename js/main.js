@@ -14,6 +14,9 @@ import {
     overlayGenElement,
     overlayGenTab
 } from './function/overlay.js';
+import {
+    moverteclado
+} from './function/mover.js';
 const button = document.querySelector('button');
 const tbody = document.querySelector('tbody');
 const thead = document.querySelector('thead');
@@ -56,18 +59,31 @@ for (let i = 1; i <= 18; i++) {
     thead.appendChild(tr);
 }
 geradorTabela(tabela, elementos, tbody);
-blindmode(function(decision) {
-    console.log(decision);
-    if (decision) {
-        console.log('Modo para cegos');
-    } else {
-        responsiveVoice.cancel();
-        console.log('Modo para não cegos');
-        button.addEventListener('click', function() {
-            overlayGenTab(tbody);
-        });
-        mouse(function(nat) {
-            overlayGenElement(nat * 1, tbody);
-        });
-    }
+responsiveVoice.setDefaultVoice('Brazilian Portuguese Male');
+document.addEventListener('keydown', function aux() {
+    document.removeEventListener('keydown', aux);
+    blindmode(function(decision) {
+        console.log(decision);
+        if (decision) {
+            responsiveVoice.cancel();
+            console.log('Modo para cegos');
+            moverteclado(function(cb) {
+                console.log(cb);
+                if (cb === 't') {
+                    overlayGenTab(tbody);
+                } else {
+                    overlayGenElement(cb, tbody);
+                }
+            });
+        } else {
+            responsiveVoice.cancel();
+            console.log('Modo para não cegos');
+            button.addEventListener('click', function() {
+                overlayGenTab(tbody);
+            });
+            mouse(function(nat) {
+                overlayGenElement(nat * 1, tbody);
+            });
+        }
+    });
 });

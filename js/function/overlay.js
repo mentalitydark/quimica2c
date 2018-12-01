@@ -75,7 +75,7 @@ export function overlayGenElement(nat, tbody) {
                     const p11 = document.createElement('span');
                     const p12 = document.createElement('span');
                     p11.textContent = 'Distribuicao:';
-                    p12.textContent = elementos[(nat * 1) - 1].familia;
+                    p12.textContent = elementos[(nat * 1) - 1].distribuicao;
                     subdiv.appendChild(p11);
                     subdiv.appendChild(p12);
                 } else if (aux === 7) {
@@ -105,8 +105,13 @@ export function overlayGenElement(nat, tbody) {
     const sair = document.createElement('button');
     sair.textContent = 'sair';
     overlay.appendChild(sair);
-    sair.addEventListener('click', function(a) {
+    sair.addEventListener('click', function() {
         document.querySelector('.overlayElemento').remove();
+    });
+    document.addEventListener('keydown', function(a) {
+        if (a.keycode === 27) {
+            document.querySelector('.overlayElemento').remove();
+        }
     });
 }
 export function overlayGenTab(tbody) {
