@@ -1,13 +1,14 @@
 /* eslint-disable max-statements */
 const mover = [0, 0]; // mover
 let enter = true;
-let flag = 0;
-export function moverteclado(cb) {
+let bloco = true;
+let trava = true;
+export function moverteclado(cb, trave) {
     document.addEventListener('keydown', function(e) {
         if (e.keyCode === 84) {
             cb('t');
         }
-        if (e.keyCode === 39 && enter === true) {
+        if (e.keyCode === 39 && enter === true && bloco === true) {
             mover[0]++;
             if (mover[0] >= 19) {
                 mover[0] = 1;
@@ -19,7 +20,7 @@ export function moverteclado(cb) {
                 td.classList.add('selecionado');
             });
         }
-        if (e.keyCode === 37 && enter === true) {
+        if (e.keyCode === 37 && enter === true && bloco === true) {
             mover[0]--;
             if (mover[0] <= 0) {
                 mover[0] = 18;
@@ -34,20 +35,22 @@ export function moverteclado(cb) {
                 th.classList.add('selecionado');
             });
         }
-        if (e.keyCode === 13 && mover[0] > 0) {
+        if (e.keyCode === 13 && enter === false && trava === true) {
+            cb((document.querySelector('.sc'
+            ).firstElementChild.textContent)*1);
+            bloco = false;
+            trava = false;
+        }
+
+        if (e.keyCode === 13 && mover[0] > 0 && enter === true) {
             enter = false;
             document.querySelectorAll('.F' + (mover[0])).forEach(function(td) {
                 td.classList.add('destaque');
             });
             document.querySelectorAll('.F' +
             (mover[0]))[mover[1]].children[0].classList.add('sc');
-            if (flag > 0) {
-                cb((document.querySelector('.sc'
-                ).firstElementChild.textContent)*1);
-            }
-            flag++;
         }
-        if (e.keyCode === 40 && enter === false) {
+        if (e.keyCode === 40 && enter === false && trava === true) {
             document.querySelectorAll('div').forEach(function(div) {
                 div.classList.remove('sc');
             });
@@ -59,7 +62,7 @@ export function moverteclado(cb) {
             document.querySelectorAll('.F' +
             (mover[0]))[mover[1]].children[0].classList.add('sc');
         }
-        if (e.keyCode === 38 && enter === false) {
+        if (e.keyCode === 38 && enter === false && trava === true) {
             document.querySelectorAll('div').forEach(function(div) {
                 div.classList.remove('sc');
             });
@@ -71,17 +74,20 @@ export function moverteclado(cb) {
             document.querySelectorAll('.F' +
             (mover[0]))[mover[1]].children[0].classList.add('sc');
         }
-        if (e.keyCode === 27 && enter === false) {
+        if (e.keyCode === 27 && enter === false && bloco === true) {
             document.querySelectorAll('div').forEach(function(div) {
                 div.classList.remove('sc');
             });
             document.querySelectorAll('.F' + (mover[0])).forEach(function(td) {
                 td.classList.remove('destaque');
             });
-            flag = 0;
             enter = true;
             mover[1] = 0;
         }
-
+        if ( e.keyCode === 27 && bloco === false) {
+            bloco = true;
+            trava = true;
+            document.querySelector('.sair').click();
+        }
     });
 }
