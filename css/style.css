@@ -139,12 +139,10 @@ div.options {
     display: flex;
     flex-direction: row;
 }
-select#voz {
-    margin: 0px 10px;
-}
-select#voz, select#cor {
-    background: url('http://i62.tinypic.com/15xvbd5.png') no-repeat 97% -5px;
-    height: 29px;
+select#cor {
+    margin-left: 5px;
+    background: url('http://i62.tinypic.com/15xvbd5.png') no-repeat 97% -8px;
+    height: 20px;
     width: 140px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;

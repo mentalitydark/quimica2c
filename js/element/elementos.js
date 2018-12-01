@@ -1,7 +1,7 @@
 export const elementos = [{
     nome: 'Hidrogênio',
     sigla: 'H',
-    massa: 1008,
+    massa: 1.008,
     atomico: 1,
     class: 'nao_metal',
     fusao: '-259,2 °C',
@@ -17,7 +17,7 @@ export const elementos = [{
 {
     nome: 'Hélio',
     sigla: 'He',
-    massa: 40026,
+    massa: 4.0026,
     atomico: 2,
     class: 'gas_nobre',
     fusao: '-272,2 °C',
@@ -33,7 +33,7 @@ export const elementos = [{
 {
     nome: 'Lítio',
     sigla: 'Li',
-    massa: 694,
+    massa: 6.94,
     atomico: 3,
     class: 'metal_alcalino',
     fusao: '180,5 °C',
@@ -49,7 +49,7 @@ export const elementos = [{
 {
     nome: 'Berílio',
     sigla: 'Be',
-    massa: 90122,
+    massa: 9.0122,
     atomico: 4,
     class: 'metal_alcalino_terroso',
     fusao: '1280 °C',
@@ -65,7 +65,7 @@ export const elementos = [{
 {
     nome: 'Boro',
     sigla: 'B',
-    massa: 1081,
+    massa: 10.81,
     atomico: 5,
     class: 'semi_metal',
     fusao: '2300 °C',
@@ -81,7 +81,7 @@ export const elementos = [{
 {
     nome: 'Carbono',
     sigla: 'C',
-    massa: 12011,
+    massa: 12.011,
     atomico: 6,
     class: 'nao_metal',
     fusao: '3500 °C',
@@ -97,7 +97,7 @@ export const elementos = [{
 {
     nome: 'Nitrogênio',
     sigla: 'N',
-    massa: 14007,
+    massa: 14.007,
     atomico: 7,
     class: 'nao_metal',
     fusao: '-210 °C',
@@ -113,7 +113,7 @@ export const elementos = [{
 {
     nome: 'Oxigênio',
     sigla: 'O',
-    massa: 15999,
+    massa: 15.999,
     atomico: 8,
     class: 'nao_metal',
     fusao: '°C',
@@ -130,7 +130,7 @@ export const elementos = [{
 {
     nome: 'Flúor',
     sigla: 'F',
-    massa: 18998,
+    massa: 18.998,
     atomico: 9,
     class: 'halogenio',
     fusao: '-220 °C',
@@ -146,7 +146,7 @@ export const elementos = [{
 {
     nome: 'Neônio',
     sigla: 'Ne',
-    massa: 2018,
+    massa: 20.18,
     atomico: 10,
     class: 'gas_nobre',
     fusao: '-249 °C',
@@ -162,7 +162,7 @@ export const elementos = [{
 {
     nome: 'Sódio',
     sigla: 'Na',
-    massa: 2299,
+    massa: 22.99,
     atomico: 11,
     class: 'metal_alcalino',
     fusao: '98 °C',
@@ -178,7 +178,7 @@ export const elementos = [{
 {
     nome: 'Magnésio',
     sigla: 'Mg',
-    massa: 24305,
+    massa: 24.305,
     atomico: 12,
     class: 'metal_alcalino_terroso',
     fusao: '650 °C',
@@ -194,7 +194,7 @@ export const elementos = [{
 {
     nome: 'Alumínio',
     sigla: 'Al',
-    massa: 26982,
+    massa: 26.982,
     atomico: 13,
     class: 'metal_representativo',
     fusao: '660 °C',
@@ -210,7 +210,7 @@ export const elementos = [{
 {
     nome: 'Silício',
     sigla: 'Si',
-    massa: 28085,
+    massa: 28.085,
     atomico: 14,
     class: 'semi_metal',
     fusao: '1410 °C',
@@ -226,7 +226,7 @@ export const elementos = [{
 {
     nome: 'Fósforo',
     sigla: 'P',
-    massa: 30974,
+    massa: 30.974,
     atomico: 15,
     class: 'nao_metal',
     fusao: '44 °C',
@@ -242,7 +242,7 @@ export const elementos = [{
 {
     nome: 'Enxofre',
     sigla: 'S',
-    massa: 3206,
+    massa: 32.06,
     atomico: 16,
     class: 'nao_metal',
     fusao: '115 °C',
@@ -258,7 +258,7 @@ export const elementos = [{
 {
     nome: 'Cloro',
     sigla: 'Cl',
-    massa: 3545,
+    massa: 35.45,
     atomico: 17,
     class: 'halogenio',
     fusao: '-101 °C',
@@ -274,7 +274,7 @@ export const elementos = [{
 {
     nome: 'Argônio',
     sigla: 'Ar',
-    massa: 39948,
+    massa: 39.948,
     atomico: 18,
     class: 'gas_nobre',
     fusao: '-189 °C',
@@ -290,7 +290,7 @@ export const elementos = [{
 {
     nome: 'Potássio',
     sigla: 'K',
-    massa: 39098,
+    massa: 39.098,
     atomico: 19,
     class: 'metal_alcalino',
     fusao: '64 °C',
@@ -306,7 +306,7 @@ export const elementos = [{
 {
     nome: 'Cálcio',
     sigla: 'Ca',
-    massa: 40078,
+    massa: 40.078,
     atomico: 20,
     class: 'metal_alcalino_terroso',
     fusao: '839 °C',
