@@ -1,3 +1,4 @@
+/* eslint-disable max-statements */
 import {
     elementos
 } from '../element/elementos.js';
@@ -5,7 +6,7 @@ import {
 const nomesdiv = ['divElementoEstado', 'divFusaoEbulicao', 'divFamiliaNox',
     'divDistribuicaoValecia', 'divCuriosidades'
 ];
-const nomesdivinf = ['element', 'estado', 'fusao',
+const nomesdivinf = ['elemento', 'estado', 'fusao',
     'ebulicao', 'familia', 'nox',
     'distribuicao', 'valencia', 'curiosidade'
 ];
@@ -14,6 +15,9 @@ export function overlayGenElement(nat, tbody) {
     const overlay = document.createElement('div');
     overlay.classList.add('overlayElemento');
     tbody.appendChild(overlay);
+    const divmenoselemento = document.createElement('div');
+    const divFusEbuFamNoxDisVal = document.createElement('div');
+    const divFusEbuFamNox = document.createElement('div');
     for (let i = 0; i < nomesdiv.length; i++) {
         const div = document.createElement('div');
         div.classList.add(nomesdiv[i]);
@@ -27,60 +31,60 @@ export function overlayGenElement(nat, tbody) {
                     const siglap = document.createElement('strong');
                     const massap = document.createElement('p');
                     const atomicop = document.createElement('span');
-                    const vetinf = [atomicop, siglap, nomep,  massap];
+                    const vetinf = [nomep, siglap, massap, atomicop];
                     nomep.textContent = elementos[(nat * 1) - 1].nome;
                     siglap.textContent = elementos[(nat * 1) - 1].sigla;
                     massap.textContent = elementos[(nat * 1) - 1].massa;
                     atomicop.textContent = elementos[(nat * 1) - 1].atomico;
                     nomep.classList.add('nome');
-                    atomicop.classList.add('numero');
                     siglap.classList.add('sigla');
+                    atomicop.classList.add('numero');
                     massap.classList.add('massa');
                     for (let k = 0; k < vetinf.length; k++) {
                         subdiv.appendChild(vetinf[k]);
                     }
                 } else if (aux === 1) {
-                    const p1 = document.createElement('span');
+                    const p1 = document.createElement('p');
                     p1.textContent = `${elementos[(nat * 1) - 1].estado}`;
                     subdiv.appendChild(p1);
                 } else if (aux === 2) {
-                    const p3 = document.createElement('span');
-                    const p4 = document.createElement('span');
+                    const p3 = document.createElement('p');
+                    const p4 = document.createElement('p');
                     p3.textContent = 'Fusao:';
                     p4.textContent = elementos[(nat * 1) - 1].fusao;
                     subdiv.appendChild(p3);
                     subdiv.appendChild(p4);
                 } else if (aux === 3) {
-                    const p5 = document.createElement('span');
-                    const p6 = document.createElement('span');
+                    const p5 = document.createElement('p');
+                    const p6 = document.createElement('p');
                     p5.textContent = 'Ebulicao';
                     p6.textContent = elementos[(nat * 1) - 1].ebulicao;
                     subdiv.appendChild(p5);
                     subdiv.appendChild(p6);
                 } else if (aux === 4) {
-                    const p7 = document.createElement('span');
-                    const p8 = document.createElement('span');
+                    const p7 = document.createElement('p');
+                    const p8 = document.createElement('p');
                     p7.textContent = 'Familia:';
                     p8.textContent = elementos[(nat * 1) - 1].familia;
                     subdiv.appendChild(p7);
                     subdiv.appendChild(p8);
                 } else if (aux === 5) {
-                    const p9 = document.createElement('span');
-                    const p10 = document.createElement('span');
+                    const p9 = document.createElement('p');
+                    const p10 = document.createElement('p');
                     p9.textContent = 'NOX:';
                     p10.textContent = elementos[(nat * 1) - 1].nox;
                     subdiv.appendChild(p9);
                     subdiv.appendChild(p10);
                 } else if (aux === 6) {
-                    const p11 = document.createElement('span');
-                    const p12 = document.createElement('span');
+                    const p11 = document.createElement('p');
+                    const p12 = document.createElement('p');
                     p11.textContent = 'Distribuicao:';
                     p12.textContent = elementos[(nat * 1) - 1].distribuicao;
                     subdiv.appendChild(p11);
                     subdiv.appendChild(p12);
                 } else if (aux === 7) {
-                    const p13 = document.createElement('span');
-                    const p14 = document.createElement('span');
+                    const p13 = document.createElement('p');
+                    const p14 = document.createElement('p');
                     p13.textContent = 'Valencia:';
                     p14.textContent = elementos[(nat * 1) - 1].valencia;
                     subdiv.appendChild(p13);
@@ -89,18 +93,30 @@ export function overlayGenElement(nat, tbody) {
                 div.appendChild(subdiv);
                 aux++;
             }
+            if (i>0 && i<3) {
+                divFusEbuFamNox.appendChild(div);
+            }
+            if (i===3) {
+                divFusEbuFamNoxDisVal.appendChild(divFusEbuFamNox);
+                divFusEbuFamNoxDisVal.appendChild(div);
+            }
+            if (i === 0) {
+                divmenoselemento.appendChild(div);
+            }
+            divmenoselemento.appendChild(divFusEbuFamNoxDisVal);
         } else {
             const subdiv = document.createElement('fieldset');
             subdiv.classList.add(nomesdivinf[8]);
             const p15 = document.createElement('legend');
-            const p16 = document.createElement('span');
+            const p16 = document.createElement('p');
             p15.textContent = 'Curiosidades:';
             p16.textContent = elementos[(nat * 1) - 1].curiosidade;
             subdiv.appendChild(p15);
             subdiv.appendChild(p16);
             div.appendChild(subdiv);
+            overlay.appendChild(divmenoselemento);
+            overlay.appendChild(div);
         }
-        overlay.appendChild(div);
     }
     const sair = document.createElement('button');
     sair.textContent = 'sair';
