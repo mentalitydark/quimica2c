@@ -1,6 +1,7 @@
 /* eslint-disable max-statements */
 import {
-    audioElemento
+    audioElemento,
+    audioFamilia
 } from './audio.js';
 const mover = [0, 0]; // mover
 let enter = true;
@@ -22,6 +23,7 @@ export function moverteclado(cb, trave) {
             document.querySelectorAll('.f' + (mover[0])).forEach(function(td) {
                 td.classList.add('selecionado');
             });
+            audioFamilia(document.querySelector('.selecionado'));
         }
         if (e.keyCode === 37 && enter === true && bloco === true) {
             mover[0]--;
@@ -37,6 +39,7 @@ export function moverteclado(cb, trave) {
             document.querySelectorAll('.f' + (mover[0])).forEach(function(th) {
                 th.classList.add('selecionado');
             });
+            audioFamilia(document.querySelector('.selecionado'));
         }
         if (e.keyCode === 13 && enter === false && trava === true) {
             cb((document.querySelector('.sc').firstElementChild.textContent
