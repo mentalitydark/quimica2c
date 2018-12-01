@@ -45,7 +45,7 @@ export function audioOverlayElemento(num) {
     const k = (`Valencia ${elementos[num-1].valencia}`);
     const l = (`Curiosidades ${elementos[num-1].curiosidade}`);
 
-    responsiveVoice.speak(a + ' ; ' + b + ' ; ' + c + ' ; ' + d
+    responsiveVoice.speak('Detalhes: '+ a + ' ; ' + b + ' ; ' + c + ' ; ' + d
     + ' ; ' + e + ' ; ' + f + ' ; ' + g + ' ; ' + h + ' ; ' + i
     + ' ; ' + j + ' ; ' + k + ' ; ' + l);
 }
