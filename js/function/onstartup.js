@@ -1,4 +1,3 @@
-import {audio} from './audio.js';
 export const lang = ['Brazilian Portuguese Female', 'Brazilian Portuguese Male',
     'US English Female',
     'US English Male'
@@ -6,7 +5,9 @@ export const lang = ['Brazilian Portuguese Female', 'Brazilian Portuguese Male',
 let flag = true;
 export function blindmode(cb) {
     let decision;
-    responsiveVoice.speak(`Deseja ativar o modo adaptado para cegos? Caso queira ativar, aperte a tecla S ou caso queira não ativar, aperte a tecla N.`, lang[1], {
+    responsiveVoice.speak(`Deseja ativar o modo adaptado para cegos?
+         Caso queira ativar,aperte a tecla S ou caso não queira ativar,
+          aperte a tecla N.`, lang[1], {
         rate: 1
     });
     document.addEventListener('keydown', blindModeEvent);
@@ -19,7 +20,6 @@ export function blindmode(cb) {
                 flag = false;
             } else if (b.key === 'n' || b.key === 'N') {
                 decision = false;
-                audio(b.key);
                 cb(decision);
                 flag = false;
             }
