@@ -17,6 +17,9 @@ import {
 import {
     moverteclado
 } from './function/mover.js';
+import {
+    audioOverlayElemento
+} from './function/audio.js';
 const button = document.querySelector('button');
 const tbody = document.querySelector('tbody');
 const thead = document.querySelector('thead');
@@ -73,6 +76,7 @@ document.addEventListener('keydown', function aux() {
                     overlayGenTab(tbody);
                 } else {
                     overlayGenElement(cb, tbody);
+                    audioOverlayElemento(cb);
                 }
             });
         } else {

@@ -133,7 +133,7 @@ export function overlayGenElement(nat, tbody) {
             const overlay = document.querySelectorAll('.overlayElemento');
             for (let i = 0; i < overlay.length; i++) {
                 overlay[i].remove();
-            }
+            } responsiveVoice.cancel();
         }
     });
 }
