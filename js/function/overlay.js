@@ -105,8 +105,13 @@ export function overlayGenElement(nat, tbody) {
     const sair = document.createElement('button');
     sair.textContent = 'sair';
     overlay.appendChild(sair);
-    sair.addEventListener('click', function(a) {
+    sair.addEventListener('click', function() {
         document.querySelector('.overlayElemento').remove();
+    });
+    document.addEventListener('keydown', function(a) {
+        if (a.keycode === 27) {
+            document.querySelector('.overlayElemento').remove();
+        }
     });
 }
 export function overlayGenTab(tbody) {

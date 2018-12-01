@@ -116,7 +116,6 @@ export const elementos = [{
     massa: 15999,
     atomico: 8,
     class: 'nao_metal',
-    fusao: '°C',
     fusao: '-222 °C',
     ebulicao: '-183 °C',
     valencia: 'possui 6 elétrons (L)',
