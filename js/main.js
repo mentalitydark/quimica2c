@@ -47,8 +47,8 @@ for (let i = 1; i <= 18; i++) {
 geradorTabela(tabela, elementos, tbody);
 
 blindmode(function(decision) {
-    // console.log(decision);
-    if (decision === true) {
+    console.log(decision);
+    if (decision) {
         console.log('Modo para cegos');
     } else {
         responsiveVoice.cancel();
