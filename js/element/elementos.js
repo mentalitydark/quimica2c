@@ -7,7 +7,7 @@ export const elementos = [{
     fusao: '-259,2 °C',
     ebulicao: '-252,87 °C',
     valencia: 'possui 1 elétron (K)',
-    nox: '+1',
+    nox: '-1 +1',
     curiosidade: 'Encontrado em água (H2O), em estrelas (Sol) e Universo (75% do Universo é composto de hidrogênio)',
     distribuicao: '1s1',
     estado: 'Gasoso',
