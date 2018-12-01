@@ -120,6 +120,7 @@ export function overlayGenElement(nat, tbody) {
     }
     const sair = document.createElement('button');
     sair.textContent = 'sair';
+    sair.className = 'sair';
     overlay.appendChild(sair);
     sair.addEventListener('click', function() {
         const overlay = document.querySelectorAll('.overlayElemento');
