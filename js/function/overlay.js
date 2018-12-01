@@ -75,7 +75,7 @@ export function overlayGenElement(nat, tbody) {
                     const p11 = document.createElement('p');
                     const p12 = document.createElement('p');
                     p11.textContent = 'Distribuicao:';
-                    p12.textContent = elementos[(nat * 1) - 1].familia;
+                    p12.textContent = elementos[(nat * 1) - 1].distribuicao;
                     subdiv.appendChild(p11);
                     subdiv.appendChild(p12);
                 } else if (aux === 7) {
