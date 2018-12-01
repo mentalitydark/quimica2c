@@ -9,15 +9,20 @@
     right: 20%;
     bottom: 20%;
     z-index: 2;
+    background-color: white;
     border: 1px solid black;
     padding: 20px 15px 20px 15px;
     justify-content: center;
+}
+.overlayElemento span {
+    margin-left: 5px;
 }
 .divElementoEstado,
 .divFusaoEbulicao,
 .divFamiliaNox,
 .divDistribuicaoValencia,
-.divCuriosidades {
+.divCuriosidades,
+.curiosidade {
     padding: 10px;
     margin: 5px 10px;
 }
@@ -93,7 +98,11 @@ div.element{
     flex-direction: column;
     align-items: center;
 }
-
+.curiosidade {
+    border: 1px solid black;
+    font-weight: bold;
+    text-decoration: underline;
+}
 .estado {
     margin-top: 5px
 }
