@@ -1,16 +1,15 @@
-export const audio = function(acao) {
-    const audioAD = document.querySelectorAll('.audio_icone')
-    if (acao === 'N' || acao === 'n') {
-        audioAD[1].style.zIndex = 2;
-    }
-}
-export const AtivarDesativar = function(event) {
-    const acao = event.parentElement;
-    if (acao[1].style.zIndex === '2') {
-        acao[1].style.zIndex = 0;
-        acao[0].style.zIndex = 1;
+export function audioElemento(elemento) {
+    const a = (`Número atómico ${elemento.children[0].innerText}`);
+    let b;
+    if (elemento.children[1].innerText[1] !== undefined) {
+        b = (`Sigla ${elemento.children[1].innerText[0]}
+         ${elemento.children[1].innerText[1]}`);
     } else {
-        acao[1].style.zIndex = 2;
-        acao[0].style.zIndex = 0;
+        b = (`Sigla ${elemento.children[1].innerText[0]}`);
     }
+    const c = (`Nome ${elemento.children[2].innerText}`);
+    const d = (`Massa ${elemento.children[3].innerText}`);
+    const e = (`Classe ${elemento.classList[1].replace(/_/g, ' ')}`);
+
+    responsiveVoice.speak(a + ' ; ' + b + ' ; ' + c + ' ; ' + d + ' ; ' + e);
 }
