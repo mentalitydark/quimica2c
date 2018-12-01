@@ -1,15 +1,18 @@
+import {elementos} from '../element/elementos.js'
+
 export function audioElemento(elemento) {
-    const a = (`Número atómico ${elemento.children[0].innerText}`);
+    const num = elemento.children[0].textContent*1
+    const a = (`Número atômico ${elementos[num-1].atomico}`);
     let b;
-    if (elemento.children[1].innerText[1] !== undefined) {
-        b = (`Sigla ${elemento.children[1].innerText[0]}
-         ${elemento.children[1].innerText[1]}`);
+    if (elementos[num-1].sigla[1] !== undefined) {
+        b = (`Sigla ${elementos[num-1].sigla[0]}
+         ${elementos[num-1].sigla[1]}`);
     } else {
-        b = (`Sigla ${elemento.children[1].innerText[0]}`);
+        b = (`Sigla ${elementos[num-1].sigla[0]}`);
     }
-    const c = (`Nome ${elemento.children[2].innerText}`);
-    const d = (`Massa ${elemento.children[3].innerText}`);
-    const e = (`Classe ${elemento.classList[1].replace(/_/g, ' ')}`);
+    const c = (`Nome ${elementos[num-1].nome}`);
+    const d = (`Massa ${elementos[num-1].massa}`);
+    const e = (`Familia ${elementos[num-1].familia}`);
 
     responsiveVoice.speak(a + ' ; ' + b + ' ; ' + c + ' ; ' + d + ' ; ' + e);
 }
