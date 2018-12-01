@@ -48,7 +48,7 @@ for (let i = 1; i <= 18; i++) {
     const familia = ['', 'I A', 'II A', 'III B',
         'IV B', 'V B', 'VI B', 'VII B', 'VIII B',
         'VIII B', 'VIII B',
-        'III B', 'II B', 'III A', 'IV A', 'V A',
+        'I B', 'II B', 'III A', 'IV A', 'V A',
         'VI A', 'VII A', 'VIII A'
     ];
     const th = document.createElement('th');

@@ -2,6 +2,7 @@
 import {
     elementos
 } from '../element/elementos.js';
+import {SupTransform} from './supTransform.js';
 // import {tbody} from '../main.js';
 const nomesdiv = ['divElementoEstado', 'divFusaoEbulicao', 'divFamiliaNox',
     'divDistribuicaoValecia', 'divCuriosidades'
@@ -79,7 +80,7 @@ export function overlayGenElement(nat, tbody) {
                     const p11 = document.createElement('span');
                     const p12 = document.createElement('span');
                     p11.textContent = 'Distribuição:';
-                    p12.textContent = elementos[(nat * 1) - 1].distribuicao;
+                    p12.innerHTML = SupTransform(elementos[(nat * 1) - 1].distribuicao);
                     subdiv.appendChild(p11);
                     subdiv.appendChild(p12);
                 } else if (aux === 7) {

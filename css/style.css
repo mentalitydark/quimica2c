@@ -223,6 +223,7 @@ div.elemento{
     box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
     z-index: 0;
     cursor: pointer;
+    overflow: hidden;
 }
 .selecionado {
     border-top: 2px dashed red;
@@ -350,4 +351,8 @@ div.sc {
 div.invisivel {
     transition: 0.3s;
     opacity: 0.2;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
 }
