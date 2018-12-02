@@ -1,6 +1,5 @@
 export function mouse(cb) {
     document.addEventListener('click', function(e) {
-        console.log(e.target.parentElement);
         if (e.target.tagName === ('DIV') &&
             e.target.classList.contains('elemento') === true) {
             cb(e.target.firstChild.textContent);

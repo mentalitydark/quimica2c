@@ -1,9 +1,7 @@
-/* eslint-disable max-statements */
 import {
     elementos
 } from '../element/elementos.js';
 import {supTransform} from './supTransform.js';
-// import {tbody} from '../main.js';
 const nomesdiv = ['divElementoEstado', 'divFusaoEbulicao', 'divFamiliaNox',
     'divDistribuicaoValecia', 'divCuriosidades'
 ];
