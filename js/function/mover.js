@@ -56,7 +56,6 @@ export function moverteclado(cb, trave) {
             document.querySelectorAll('.F' +
                 (mover[0]))[mover[1]].children[0].classList.add('sc');
             audioElemento(document.querySelector('.sc'));
-            document.querySelector('.sair').remove();
         }
         if (e.keyCode === 40 && enter === false && trava === true) {
             document.querySelectorAll('div').forEach(function(div) {
