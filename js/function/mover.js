@@ -98,7 +98,6 @@ export function moverteclado(cb, trave) {
         if (e.keyCode === 27 && bloco === false) {
             bloco = true;
             trava = true;
-            document.querySelector('.sair').remove();
         }
     });
 }
