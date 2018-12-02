@@ -66,7 +66,7 @@ responsiveVoice.setDefaultVoice('Brazilian Portuguese Male');
 document.addEventListener('keydown', function aux() {
     document.removeEventListener('keydown', aux);
     blindmode(function(decision) {
-        console.log(decision);
+        // overlayGenStart();
         if (decision) {
             responsiveVoice.cancel();
             console.log('Modo para cegos');

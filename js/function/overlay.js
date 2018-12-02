@@ -222,3 +222,35 @@ export function overlayGenTab(tbody) {
         document.querySelector('.overlayTab').remove();
     });
 }
+
+export function overlayGenStart(tbody) {
+    let flag = true;
+    const overlay = document.createElement('div');
+    const background = document.createElement('div');
+    const text1 = document.createElement('a1');
+    const text2 = document.createElement('span');
+    const text3 = document.createElement('a1');
+    background.classList.add('overlayStartupBackground');
+    overlay.classList.add('overlayStartup');
+    text1.textContent =
+     'Aperte S para navegar o site com o modo adaptado para cegos';
+    text2.textContent = 'Ou';
+    text3.textContent =
+    'Aperte N para navegar o site sem ativar o modo adaptado para cegos';
+    overlay.appendChild(text1);
+    overlay.appendChild(text2);
+    overlay.appendChild(text3);
+    background.appendChild(overlay);
+    tbody.appendChild(background);
+    document.addEventListener('keydown', key);
+    function key(b) {
+        if (flag === true) {
+            if (b.key === 's' || b.key === 'S' ||
+             b.key === 'n' || b.key === 'N') {
+                document.querySelector('.overlayStartup').remove();
+                flag = false;
+            }
+        }
+    }
+}
+
