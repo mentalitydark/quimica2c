@@ -151,6 +151,8 @@ export function overlayGenElement(nat, tbody) {
     });
 }
 export function overlayGenTab(tbody) {
+    document.querySelector('.overlayTabBackground') !== null ? document.querySelector('.overlayTabBackground').remove() :'';
+    document.querySelector('.overlayElemento') !== null ? document.querySelector('.overlayElemento').remove() :'';
     let cont = 0;
     const numelementos = [
         [9, 7, 2, 2, 4, 1, 5],
@@ -275,6 +277,12 @@ export function overlayGenTab(tbody) {
     tbody.appendChild(background);
     sair.addEventListener('click', function(a) {
         document.querySelector('.overlayTabBackground').remove();
+    });
+    document.addEventListener('keydown', function (a) {
+        if (a.keyCode === 27) {
+            document.querySelector('.overlayTabBackground').remove();
+            responsiveVoice.cancel();
+        }
     });
 }
 

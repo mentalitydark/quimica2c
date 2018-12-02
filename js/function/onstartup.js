@@ -26,6 +26,8 @@ export function blindmode(cb) {
                     Esc.
                     Tabela de Cátions e Ânions:
                     T.
+                    Parar áudio:
+                    Espaço.
                 `);
                 decision = true;
                 cb(decision);

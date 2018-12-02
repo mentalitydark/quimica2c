@@ -67,13 +67,11 @@ function aux() {
     document.removeEventListener('keydown', aux);
     document.removeEventListener('click', aux);
     blindmode(function (decision) {
-        // overlayGenStart();
         if (decision) {
             responsiveVoice.cancel();
             console.log('Modo para cegos');
             moverteclado(function (cb) {
-                console.log(cb);
-                if (cb === 't') {
+                if (cb === 't' || cb === 'T') {
                     responsiveVoice.cancel();
                     overlayGenTab(tbody);
                 } else {
@@ -96,3 +94,4 @@ function aux() {
 }
 document.addEventListener('keydown', aux);
 document.addEventListener('click', aux)
+document.addEventListener('keypress', function(event) {event.key === ' ' ? responsiveVoice.cancel() : '';})

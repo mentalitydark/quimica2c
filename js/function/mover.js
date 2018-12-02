@@ -6,7 +6,7 @@ const mover = [0, 0]; // mover
 let enter = true;
 let bloco = true;
 let trava = true;
-export function moverteclado(cb, trave) {
+export function moverteclado(cb) {
     document.addEventListener('keydown', function(e) {
         if (e.keyCode === 84) {
             cb('t');
