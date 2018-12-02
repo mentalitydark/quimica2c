@@ -43,6 +43,7 @@ export function moverteclado(cb) {
         if (e.keyCode === 13 && enter === false && trava === true) {
             cb((document.querySelector('.sc').firstElementChild.textContent
             ) * 1);
+            document.querySelector('.sair').remove();
             bloco = false;
             trava = false;
         }
@@ -96,7 +97,6 @@ export function moverteclado(cb) {
         if (e.keyCode === 27 && bloco === false) {
             bloco = true;
             trava = true;
-            document.querySelector('.sair').remove();
         }
     });
 }
