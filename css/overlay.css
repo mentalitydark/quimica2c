@@ -163,14 +163,21 @@ div.element{
     display: block;
     margin: 5px;
 }
-.overlaytab {
-    background-color: white;
+.overlayTab {
     position: fixed;
-    z-index: 4;
-    top: 20%;
-    bottom: 20%;
-    left: 20%;
-    right: 20%;
+    display: flex;
+    flex-direction: column;
     width: 50%;
     height: 50%;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
+    z-index: 2;
+    background-color: rgba(106, 198, 252, 1);
+    border: 1px solid black;
+    padding: 20px 15px 20px 15px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 34px 3px rgba(0, 0, 0, 0.3), 10px 10px 50px 2px rgba(0, 0, 0, .5);
 }

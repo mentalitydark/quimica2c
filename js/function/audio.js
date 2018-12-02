@@ -40,7 +40,7 @@ export function audioOverlayElemento(num) {
     const f = (`Fusão: ${elementos[num-1].fusao}`);
     const g = (`Ebulição: ${elementos[num-1].ebulicao}`);
     const h = (`Família: ${elementos[num-1].familia}`);
-    const i = (`nox: ${elementos[num-1].nox}`);
+    const i = (`nox: ${((elementos[num-1].nox).replace('...', 'até')).replace(/ /g, '.')}`);
     const j = (`Distribuição: ${elementos[num-1].distribuicao}`);
     const k = (`Valência: ${elementos[num-1].valencia}`);
     const l = (`Curiosidades: ${elementos[num-1].curiosidade}`);
