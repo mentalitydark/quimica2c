@@ -43,6 +43,7 @@ export function moverteclado(cb, trave) {
         if (e.keyCode === 13 && enter === false && trava === true) {
             cb((document.querySelector('.sc').firstElementChild.textContent
             ) * 1);
+            document.querySelector('.sair').remove();
             bloco = false;
             trava = false;
         }
@@ -55,6 +56,7 @@ export function moverteclado(cb, trave) {
             document.querySelectorAll('.F' +
                 (mover[0]))[mover[1]].children[0].classList.add('sc');
             audioElemento(document.querySelector('.sc'));
+            document.querySelector('.sair').remove();
         }
         if (e.keyCode === 40 && enter === false && trava === true) {
             document.querySelectorAll('div').forEach(function(div) {
