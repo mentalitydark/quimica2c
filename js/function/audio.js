@@ -8,11 +8,11 @@ export function audioElemento(elemento) {
         b = (`Sigla ${elementos[num-1].sigla[0]}
          ${elementos[num-1].sigla[1]}`);
     } else {
-        b = (`Sigla ${elementos[num-1].sigla[0]}`);
+        b = (`Sigla: ${elementos[num-1].sigla[0]}`);
     }
-    const c = (`Nome ${elementos[num-1].nome}`);
-    const d = (`Massa ${elementos[num-1].massa}`);
-    const e = (`Familia ${elementos[num-1].familia}`);
+    const c = (`Nome: ${elementos[num-1].nome}`);
+    const d = (`Massa: ${elementos[num-1].massa}`);
+    const e = (`Familia: ${elementos[num-1].familia}`);
     responsiveVoice.speak(a + ' ; ' + b + ' ; ' + c + ' ; ' + d + ' ; ' + e);
 }
 
@@ -29,23 +29,23 @@ export function audioOverlayElemento(num) {
     const a = (`Número atômico ${elementos[num-1].atomico}`);
     let b;
     if (elementos[num-1].sigla[1] !== undefined) {
-        b = (`Sigla ${elementos[num-1].sigla[0]}
+        b = (`Sigla: ${elementos[num-1].sigla[0]}
          ${elementos[num-1].sigla[1]}`);
     } else {
-        b = (`Sigla ${elementos[num-1].sigla[0]}`);
+        b = (`Sigla: ${elementos[num-1].sigla[0]}`);
     }
-    const c = (`Nome ${elementos[num-1].nome}`);
-    const d = (`Massa ${elementos[num-1].massa}`);
-    const e = (`Estado ${elementos[num-1].estado}`);
-    const f = (`Fusao ${elementos[num-1].fusao}`);
-    const g = (`Ebulicao ${elementos[num-1].ebulicao}`);
-    const h = (`Familia ${elementos[num-1].familia}`);
-    const i = (`NOX ${elementos[num-1].nox}`);
-    const j = (`Distribuição ${elementos[num-1].distribuicao}`);
-    const k = (`Valencia ${elementos[num-1].valencia}`);
-    const l = (`Curiosidades ${elementos[num-1].curiosidade}`);
+    const c = (`Nome: ${elementos[num-1].nome}`);
+    const d = (`Massa: ${elementos[num-1].massa}`);
+    const e = (`Estado: ${elementos[num-1].estado}`);
+    const f = (`Fusão: ${elementos[num-1].fusao}`);
+    const g = (`Ebulição: ${elementos[num-1].ebulicao}`);
+    const h = (`Família: ${elementos[num-1].familia}`);
+    const i = (`nox: ${elementos[num-1].nox}`);
+    const j = (`Distribuição: ${elementos[num-1].distribuicao}`);
+    const k = (`Valência: ${elementos[num-1].valencia}`);
+    const l = (`Curiosidades: ${elementos[num-1].curiosidade}`);
 
     responsiveVoice.speak('Detalhes: '+ a + ' ; ' + b + ' ; ' + c + ' ; ' + d
     + ' ; ' + e + ' ; ' + f + ' ; ' + g + ' ; ' + h + ' ; ' + i
-    + ' ; ' + j + ' ; ' + k + ' ; ' + l);
+    + ' ; ' + j + ' ; ' + k + ' ' + l);
 }

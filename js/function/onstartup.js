@@ -9,6 +9,17 @@ export function blindmode(cb) {
     function blindModeEvent(b) {
         if (flag === true) {
             if (b.key === 's' || b.key === 'S') {
+                responsiveVoice.speak(`
+                    Atalhos:
+                    Navegar pela família selecionada:
+                    Seta para cima ou para baixo.
+                    Navegar entre as famílias:
+                    Seta para esquerda ou direita.
+                    Selecionar elemento ou família:
+                    Enter.
+                    Tabela de Cátions e Ânions:
+                    T.
+                `);
                 decision = true;
                 cb(decision);
                 flag = false;
