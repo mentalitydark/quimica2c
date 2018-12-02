@@ -2,6 +2,10 @@
 import {
     elementos
 } from '../element/elementos.js';
+import {
+    cationsAnionsNome,
+    cationsAnionsSigla
+} from '../element/tabelacationsanionsinfo.js';
 import {supTransform} from './supTransform.js';
 const nomesdiv = ['divElementoEstado', 'divFusaoEbulicao', 'divFamiliaNox',
     'divDistribuicaoValecia', 'divCuriosidades'
@@ -139,6 +143,7 @@ export function overlayGenElement(nat, tbody) {
     });
 }
 export function overlayGenTab(tbody) {
+    let cont = 0;
     const numelementos = [[9, 7, 2, 2, 4, 1, 5], [36, 26, 9, 4]];
     const divnomes = [['cations', 'anions'],
         ['monodipositivostop', 'tripositivosplustop'],
@@ -150,11 +155,13 @@ export function overlayGenTab(tbody) {
         ['1-', '2-', '3-', '4-']];
     let flag = false;
     let flag1 = false;
+    const background = document.createElement('div');
     const overlay = document.createElement('div');
     const trimonodipositivos = document.createElement('div');
     const ditrimonodipositivos = document.createElement('div');
     trimonodipositivos.classList.add('trimonodipositivos');
     ditrimonodipositivos.classList.add('ditrimonodipositivos');
+    background.classList.add('overlayTabBackground');
     overlay.classList.add('overlayTab');
     for (let i=0; i<divnomes[0].length; i++) {
         const tabcatan = document.createElement('div');
@@ -178,10 +185,12 @@ export function overlayGenTab(tbody) {
                         const catan = document.createElement('div');
                         const sigla = document.createElement('span');
                         const nome = document.createElement('span');
+                        sigla.textContent = cationsAnionsSigla[cont];
+                        nome.textContent = cationsAnionsNome[cont];
                         catan.appendChild(sigla);
                         catan.appendChild(nome);
-
                         divisoes.appendChild(catan);
+                        cont++;
                     }
                     if (k===0 || k===1 || k===6) {
                         grupo.appendChild(divisoes);
@@ -224,10 +233,12 @@ export function overlayGenTab(tbody) {
                         const catan = document.createElement('div');
                         const sigla = document.createElement('span');
                         const nome = document.createElement('span');
+                        sigla.textContent = cationsAnionsSigla[cont];
+                        nome.textContent = cationsAnionsNome[cont];
                         catan.appendChild(sigla);
                         catan.appendChild(nome);
-
                         divisoes.appendChild(catan);
+                        cont++;
                     }
                     grupo.appendChild(divisoes);
                     if ((j===0 && k===0)||(j===1)) {
@@ -242,7 +253,8 @@ export function overlayGenTab(tbody) {
     const sair = document.createElement('button');
     sair.textContent = 'sair';
     overlay.appendChild(sair);
-    tbody.appendChild(overlay);
+    background.appendChild(overlay);
+    tbody.appendChild(background);
     sair.addEventListener('click', function(a) {
         document.querySelector('.overlayTab').remove();
     });
