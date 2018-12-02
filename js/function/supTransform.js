@@ -8,3 +8,14 @@ export const supTransform = function(numberStr) {
     }
     return newStr;
 };
+export const numTransform = function(str) {
+    let res = '';
+    for (let i = 0; i < str.length; i++) {
+        if (isNaN(str[i]*1)) {
+            res += str[i];
+        } else {
+            res += `<span class="numeroTab">${str[i]}</span>`;
+        }
+    }
+    return res;
+};
