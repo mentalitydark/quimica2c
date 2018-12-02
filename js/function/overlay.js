@@ -1,3 +1,4 @@
+/* eslint-disable max-statements */
 import {
     elementos
 } from '../element/elementos.js';
@@ -144,10 +145,16 @@ export function overlayGenTab(tbody) {
         ['mononegativostop', 'dinegativostop', 'tritetranegativostop'],
         ['monopositivos', 'dipositivos', 'tripositivos', 'monodipositivos',
             'ditripositivos', 'monotripositivos', 'ditetranegativos'],
-        ['mononegativos', 'dinegativos', 'trinegativos', 'tetranegativos']];
+        ['mononegativos', 'dinegativos', 'trinegativos', 'tetranegativos'],
+        ['1+', '2+', '3+', '1+ e 2+', '2+ e 3+', '1+ e 3+', '2+ e 4+'],
+        ['1-', '2-', '3-', '4-']];
     let flag = false;
     let flag1 = false;
     const overlay = document.createElement('div');
+    const trimonodipositivos = document.createElement('div');
+    const ditrimonodipositivos = document.createElement('div');
+    trimonodipositivos.classList.add('trimonodipositivos');
+    ditrimonodipositivos.classList.add('ditrimonodipositivos');
     overlay.classList.add('overlayTab');
     for (let i=0; i<divnomes[0].length; i++) {
         const tabcatan = document.createElement('div');
@@ -162,8 +169,11 @@ export function overlayGenTab(tbody) {
                         k=2;
                         flag = true;
                     }
-                    const divisoes = document.createElement('div');
+                    const divisoes = document.createElement('fieldset');
                     divisoes.classList.add(divnomes[3][k]);
+                    const legend = document.createElement('legend');
+                    legend.textContent= `${divnomes[5][k]} (${divnomes[3][k]})`;
+                    divisoes.appendChild(legend);
                     for (let l = 0; l<numelementos[i][k]; l++) {
                         const catan = document.createElement('div');
                         const sigla = document.createElement('span');
@@ -173,7 +183,19 @@ export function overlayGenTab(tbody) {
 
                         divisoes.appendChild(catan);
                     }
-                    grupo.appendChild(divisoes);
+                    if (k===0 || k===1 || k===6) {
+                        grupo.appendChild(divisoes);
+                    } else if (k === 2 || k===3) {
+                        trimonodipositivos.appendChild(divisoes);
+                    } else if (k ===4 || k===5) {
+                        ditrimonodipositivos.appendChild(divisoes);
+                    }
+                    if (k===3) {
+                        grupo.appendChild(trimonodipositivos);
+                    }
+                    if (k===5) {
+                        grupo.appendChild(ditrimonodipositivos);
+                    }
                     if (j===0 && k===1) {
                         k=7;
                     }
@@ -193,8 +215,11 @@ export function overlayGenTab(tbody) {
                     if (j===1) {
                         k=1;
                     }
-                    const divisoes = document.createElement('div');
+                    const divisoes = document.createElement('fieldset');
                     divisoes.classList.add(divnomes[4][k]);
+                    const legend = document.createElement('legend');
+                    legend.textContent= `${divnomes[6][k]} (${divnomes[4][k]})`;
+                    divisoes.appendChild(legend);
                     for (let l = 0; l<numelementos[i][k]; l++) {
                         const catan = document.createElement('div');
                         const sigla = document.createElement('span');
@@ -233,7 +258,7 @@ export function overlayGenStart(tbody) {
     background.classList.add('overlayStartupBackground');
     overlay.classList.add('overlayStartup');
     const S = '<span>S</span>';
-    const N = '<span>N</span>'
+    const N = '<span>N</span>';
     text1.innerHTML =
     `Aperte ${S} para navegar o site com o modo adaptado para cegos`;
     text2.textContent = 'Ou';
