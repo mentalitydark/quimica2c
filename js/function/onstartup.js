@@ -22,6 +22,8 @@ export function blindmode(cb) {
                     Seta para esquerda ou direita.
                     Selecionar elemento ou família:
                     Enter.
+                    Para sair do elemento ou da família:
+                    Esc.
                     Tabela de Cátions e Ânions:
                     T.
                 `);
