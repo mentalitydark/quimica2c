@@ -151,8 +151,10 @@ export function overlayGenElement(nat, tbody) {
     });
 }
 export function overlayGenTab(tbody) {
-    document.querySelector('.overlayTabBackground') !== null ? document.querySelector('.overlayTabBackground').remove() :'';
-    document.querySelector('.overlayElemento') !== null ? document.querySelector('.overlayElemento').remove() :'';
+    document.querySelector('.overlayTabBackground'
+    ) !== null ? document.querySelector('.overlayTabBackground').remove() :'';
+    document.querySelector('.overlayElemento'
+    ) !== null ? document.querySelector('.overlayElemento').remove() :'';
     let cont = 0;
     const numelementos = [
         [9, 7, 2, 2, 4, 1, 5],
@@ -183,6 +185,10 @@ export function overlayGenTab(tbody) {
         const tabcatan = document.createElement('div');
         tabcatan.classList.add(divnomes[0][i]);
         if (i === 0) {
+            const legendcatan = document.createElement('legend');
+            legendcatan.classList.add('legendcatan');
+            legendcatan.textContent = 'Tabela de Cátions';
+            tabcatan.appendChild(legendcatan);
             for (let j = 0; j < divnomes[1].length; j++) {
                 const grupo = document.createElement('div');
                 grupo.classList.add(divnomes[1][j]);
@@ -230,6 +236,10 @@ export function overlayGenTab(tbody) {
                 tabcatan.appendChild(grupo);
             }
         } else {
+            const legendcatan = document.createElement('legend');
+            legendcatan.classList.add('legendcatan');
+            legendcatan.textContent = 'Tabela de Ânions';
+            tabcatan.appendChild(legendcatan);
             for (let j = 0; j < divnomes[2].length; j++) {
                 const grupo = document.createElement('div');
                 grupo.classList.add(divnomes[2][j]);
@@ -278,7 +288,7 @@ export function overlayGenTab(tbody) {
     sair.addEventListener('click', function(a) {
         document.querySelector('.overlayTabBackground').remove();
     });
-    document.addEventListener('keydown', function (a) {
+    document.addEventListener('keydown', function(a) {
         if (a.keyCode === 27) {
             document.querySelector('.overlayTabBackground').remove();
             responsiveVoice.cancel();
