@@ -28,12 +28,13 @@ export function blindmode(cb) {
                 decision = true;
                 cb(decision);
                 flag = false;
+                document.querySelector('.overlayStartupBackground').remove();
             } else if (b.key === 'n' || b.key === 'N') {
                 decision = false;
                 cb(decision);
                 flag = false;
+                document.querySelector('.overlayStartupBackground').remove();
             }
-            document.querySelector('.overlayStartupBackground').remove();
         }
     }
 }

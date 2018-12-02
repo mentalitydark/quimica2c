@@ -232,11 +232,13 @@ export function overlayGenStart(tbody) {
     const text3 = document.createElement('a1');
     background.classList.add('overlayStartupBackground');
     overlay.classList.add('overlayStartup');
-    text1.textContent =
-     'Aperte S para navegar o site com o modo adaptado para cegos';
+    const S = '<span>S</span>';
+    const N = '<span>N</span>'
+    text1.innerHTML =
+    `Aperte ${S} para navegar o site com o modo adaptado para cegos`;
     text2.textContent = 'Ou';
-    text3.textContent =
-    'Aperte N para navegar o site sem ativar o modo adaptado para cegos';
+    text3.innerHTML =
+    `Aperte ${N} para navegar o site sem ativar o modo adaptado para cegos`;
     overlay.appendChild(text1);
     overlay.appendChild(text2);
     overlay.appendChild(text3);
