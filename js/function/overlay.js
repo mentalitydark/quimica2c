@@ -2,7 +2,7 @@
 import {
     elementos
 } from '../element/elementos.js';
-import {SupTransform} from './supTransform.js';
+import {supTransform} from './supTransform.js';
 // import {tbody} from '../main.js';
 const nomesdiv = ['divElementoEstado', 'divFusaoEbulicao', 'divFamiliaNox',
     'divDistribuicaoValecia', 'divCuriosidades'
@@ -80,7 +80,8 @@ export function overlayGenElement(nat, tbody) {
                     const p11 = document.createElement('span');
                     const p12 = document.createElement('span');
                     p11.textContent = 'Distribuição:';
-                    p12.innerHTML = SupTransform(elementos[(nat * 1) - 1].distribuicao);
+                    p12.innerHTML = supTransform(elementos[
+                        (nat * 1) - 1].distribuicao);
                     subdiv.appendChild(p11);
                     subdiv.appendChild(p12);
                 } else if (aux === 7) {
@@ -139,30 +140,86 @@ export function overlayGenElement(nat, tbody) {
     });
 }
 export function overlayGenTab(tbody) {
-    const div = document.createElement('div');
-    div.classList = 'overlayTab';
-    // div.appendAll(function(elements) {
-    //     for (const e of elements) this.appendChild(e);
-    // });
+    const numelementos = [[9, 7, 2, 2, 4, 1, 5], [36, 26, 9, 4]];
+    const divnomes = [['cations', 'anions'],
+        ['monodipositivostop', 'tripositivosplustop'],
+        ['mononegativostop', 'dinegativostop', 'tritetranegativostop'],
+        ['monopositivos', 'dipositivos', 'tripositivos', 'monodipositivos',
+            'ditripositivos', 'monotripositivos', 'ditetranegativos'],
+        ['mononegativos', 'dinegativos', 'trinegativos', 'tetranegativos']];
+    let flag = false;
+    let flag1 = false;
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlayTab');
+    for (let i=0; i<divnomes[0].length; i++) {
+        const tabcatan = document.createElement('div');
+        tabcatan.classList.add(divnomes[0][i]);
+        if (i === 0) {
+            for (let j=0; j<divnomes[1].length; j++) {
+                const grupo = document.createElement('div');
+                grupo.classList.add(divnomes[1][j]);
+
+                for (let k = 0; k<divnomes[3].length; k++) {
+                    if (j===1 && flag === false) {
+                        k=2;
+                        flag = true;
+                    }
+                    const divisoes = document.createElement('div');
+                    divisoes.classList.add(divnomes[3][k]);
+                    for (let l = 0; l<numelementos[i][k]; l++) {
+                        const catan = document.createElement('div');
+                        const sigla = document.createElement('span');
+                        const nome = document.createElement('span');
+                        catan.appendChild(sigla);
+                        catan.appendChild(nome);
+
+                        divisoes.appendChild(catan);
+                    }
+                    grupo.appendChild(divisoes);
+                    if (j===0 && k===1) {
+                        k=7;
+                    }
+                }
+                tabcatan.appendChild(grupo);
+            }
+        } else {
+            for (let j=0; j<divnomes[2].length; j++) {
+                const grupo = document.createElement('div');
+                grupo.classList.add(divnomes[2][j]);
+
+                for (let k = 0; k<divnomes[4].length; k++) {
+                    if (j===2 && flag1 === false) {
+                        k=2;
+                        flag1 = true;
+                    }
+                    if (j===1) {
+                        k=1;
+                    }
+                    const divisoes = document.createElement('div');
+                    divisoes.classList.add(divnomes[4][k]);
+                    for (let l = 0; l<numelementos[i][k]; l++) {
+                        const catan = document.createElement('div');
+                        const sigla = document.createElement('span');
+                        const nome = document.createElement('span');
+                        catan.appendChild(sigla);
+                        catan.appendChild(nome);
+
+                        divisoes.appendChild(catan);
+                    }
+                    grupo.appendChild(divisoes);
+                    if ((j===0 && k===0)||(j===1)) {
+                        k=3;
+                    }
+                }
+                tabcatan.appendChild(grupo);
+            }
+        }
+        overlay.appendChild(tabcatan);
+    }
     const sair = document.createElement('button');
-    const p1 = document.createElement('p');
-    const p2 = document.createElement('p');
-    const p3 = document.createElement('p');
-    const p4 = document.createElement('p');
-    const p5 = document.createElement('p');
-    p1.textContent = 'TESTE';
-    p2.textContent = 'TESTE';
-    p3.textContent = 'TESTE';
-    p4.textContent = 'TESTE';
-    p5.textContent = 'TESTE';
     sair.textContent = 'sair';
-    div.appendChild(p1);
-    div.appendChild(p2);
-    div.appendChild(p3);
-    div.appendChild(p4);
-    div.appendChild(p5);
-    div.appendChild(sair);
-    tbody.appendChild(div);
+    overlay.appendChild(sair);
+    tbody.appendChild(overlay);
     sair.addEventListener('click', function(a) {
         document.querySelector('.overlayTab').remove();
     });

@@ -1,3 +1,4 @@
+// eslint-disable-next-line max-statements
 export function geradorTabela(tabela, elementos, tbody) {
     for (let a = 0; a < tabela.length; a++) {
         for (let i = 0; i < tbody.children.length && i < tabela.length; i++) {
