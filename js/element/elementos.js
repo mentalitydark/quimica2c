@@ -964,12 +964,12 @@ export const elementos = [{
     massa: '145',
     atomico: 61,
     class: 'lantanideos',
-    fusao: ' °C',
-    ebulicao: ' °C',
+    fusao: '931 °C',
+    ebulicao: '2730 °C',
     valencia: 'possui 2 elétron (P)',
-    nox: 'nox',
+    nox: '+3',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f5 5d0',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -980,12 +980,12 @@ export const elementos = [{
     massa: '150,36',
     atomico: 62,
     class: 'lantanideos',
-    fusao: ' °C',
-    ebulicao: ' °C',
+    fusao: '1072 °C',
+    ebulicao: '1900 °C',
     valencia: 'possui 2 elétron (P)',
-    nox: 'nox',
+    nox: '+2 +3',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f6 5d0',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -996,12 +996,12 @@ export const elementos = [{
     massa: '151,96',
     atomico: 63,
     class: 'lantanideos',
-    fusao: ' °C',
-    ebulicao: ' °C',
+    fusao: '826 °C',
+    ebulicao: '1490 °C',
     valencia: 'possui 2 elétron (P)',
-    nox: 'nox',
+    nox: '+2 +3',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f7 5d0',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1012,12 +1012,12 @@ export const elementos = [{
     massa: '157,25',
     atomico: 64,
     class: 'lantanideos',
-    fusao: ' °C',
-    ebulicao: ' °C',
+    fusao: '1312 °C',
+    ebulicao: '3000 °C',
     valencia: 'possui 2 elétron (P)',
-    nox: 'nox',
+    nox: '+3',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f7 5d1',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1028,12 +1028,12 @@ export const elementos = [{
     massa: '158,93',
     atomico: 65,
     class: 'lantanideos',
-    fusao: ' °C',
-    ebulicao: ' °C',
+    fusao: '1356 °C',
+    ebulicao: '2800 °C',
     valencia: 'possui 2 elétron (P)',
-    nox: 'nox',
+    nox: '+3 +4',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f9 5d0',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1049,7 +1049,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1065,7 +1065,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1081,7 +1081,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1097,7 +1097,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1113,7 +1113,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1129,7 +1129,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Lantanídeos',
     periodo: '6º Período'
@@ -1145,7 +1145,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1161,7 +1161,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1177,7 +1177,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1193,7 +1193,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1209,7 +1209,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1225,7 +1225,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1241,7 +1241,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1257,7 +1257,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1273,7 +1273,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Líquido',
     familia: 'Metais Alcalinos',
     periodo: '6º Período'
@@ -1289,7 +1289,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Família do Boro',
     periodo: '6º Período'
@@ -1305,7 +1305,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Família do Carbono',
     periodo: '6º Período'
@@ -1321,7 +1321,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Família do Nitrogênio',
     periodo: '6º Período'
@@ -1337,7 +1337,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Calcigênios',
     periodo: '6º Período'
@@ -1353,7 +1353,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Halogênios',
     periodo: '6º Período'
@@ -1369,7 +1369,7 @@ export const elementos = [{
     valencia: 'possui  elétron (P)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Gases Nobres',
     periodo: '6º Período'
@@ -1385,7 +1385,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalinos',
     periodo: '7º Período'
@@ -1401,7 +1401,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais Alcalino Terrosos',
     periodo: '7º Período'
@@ -1417,7 +1417,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1433,7 +1433,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1449,7 +1449,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1465,7 +1465,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1481,7 +1481,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1497,7 +1497,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1513,7 +1513,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1529,7 +1529,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1545,7 +1545,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1561,7 +1561,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1577,7 +1577,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1593,7 +1593,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1609,7 +1609,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1625,7 +1625,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1641,7 +1641,7 @@ export const elementos = [{
     valencia: 'possui 2 elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Actinídeos',
     periodo: '7º Período'
@@ -1657,7 +1657,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1673,7 +1673,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1689,7 +1689,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1705,7 +1705,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1721,7 +1721,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1737,7 +1737,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1753,7 +1753,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1769,7 +1769,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1785,7 +1785,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Metais de Transição',
     periodo: '7º Período'
@@ -1801,7 +1801,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Família do Boro',
     periodo: '7º Período'
@@ -1817,7 +1817,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Família do Carbono',
     periodo: '7º Período'
@@ -1833,7 +1833,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Família do Nitrogênio',
     periodo: '7º Período'
@@ -1849,7 +1849,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Calcigênios',
     periodo: '7º Período'
@@ -1865,7 +1865,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Sólido',
     familia: 'Halogênios',
     periodo: '7º Período'
@@ -1881,7 +1881,7 @@ export const elementos = [{
     valencia: 'possui  elétron (Q)',
     nox: 'nox',
     curiosidade: '',
-    distribuicao: 'distribuição',
+    distribuicao: '',
     estado: 'Gasoso',
     familia: 'Gases Nobres',
     periodo: '7º Período'
