@@ -19,6 +19,10 @@ const nomesdivinf = ['element', 'estado', 'fusao',
 ];
 export function overlayGenElement(nat, tbody) {
     let aux = 0;
+    if (document.querySelector('.overlayElemento') !== null) {
+        const overlay = document.querySelector('.overlayElemento');
+        overlay.remove();
+    }
     const overlay = document.createElement('div');
     overlay.classList.add('overlayElemento');
     tbody.appendChild(overlay);
@@ -189,8 +193,8 @@ export function overlayGenTab(tbody) {
                     const divisoes = document.createElement('fieldset');
                     divisoes.classList.add(divnomes[3][k]);
                     const legend = document.createElement('legend');
-                    legend.textContent =
-                     `${divnomes[5][k]} (${divnomes[3][k]})`;
+                    legend.innerHTML =
+                     `<span>${divnomes[5][k]}</span> (${divnomes[3][k]})`;
                     divisoes.appendChild(legend);
                     for (let l = 0; l < numelementos[i][k]; l++) {
                         const catan = document.createElement('div');
@@ -239,8 +243,8 @@ export function overlayGenTab(tbody) {
                     const divisoes = document.createElement('fieldset');
                     divisoes.classList.add(divnomes[4][k]);
                     const legend = document.createElement('legend');
-                    legend.textContent =
-                    `${divnomes[6][k]} (${divnomes[4][k]})`;
+                    legend.innerHTML =
+                    `<span>${divnomes[6][k]}</span> (${divnomes[4][k]})`;
                     divisoes.appendChild(legend);
                     for (let l = 0; l < numelementos[i][k]; l++) {
                         const catan = document.createElement('div');
@@ -270,7 +274,7 @@ export function overlayGenTab(tbody) {
     background.appendChild(overlay);
     tbody.appendChild(background);
     sair.addEventListener('click', function(a) {
-        document.querySelector('.overlayTab').remove();
+        document.querySelector('.overlayTabBackground').remove();
     });
 }
 

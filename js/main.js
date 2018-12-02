@@ -74,6 +74,7 @@ function aux() {
             moverteclado(function (cb) {
                 console.log(cb);
                 if (cb === 't') {
+                    responsiveVoice.cancel();
                     overlayGenTab(tbody);
                 } else {
                     overlayGenElement(cb, tbody);
