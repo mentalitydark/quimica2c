@@ -37,7 +37,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, .2);
-    border-radius: 50px
+    border-radius: 20px
 }
 .overlayElemento > div:first-child > div:last-child {
     display: flex;
@@ -93,8 +93,8 @@ div.element{
 }
 .estado {
     font-size: 1.1em;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    font-weight: bold
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    font-weight: bolder
 }
 .fusao,
 .ebulicao,
