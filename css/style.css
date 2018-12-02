@@ -155,37 +155,6 @@ th{
     font-weight: bolder;
     font-size: 0.7em;
 }
-div.nao_metal {
-    background-color: #4d05ac;
-}
-div.metal_alcalino {
-    background-color: #fac000;
-}
-div.semi_metal {
-    background-color: #8ac207;
-}
-div.metal_representativo {
-    background-color: #02aecc;
-}
-div.lantanideos {
-    background-color: #4539b1;
-}
-div.gas_nobre {
-    background-color: #6f00ff;
-}
-div.metal_alcalino_terroso {
-    background-color: #a39905;
-}
-div.halogenio{
-    background-color: #c107c7;
-}
-div.metal_de_transicao{
-    background-color: #b30119;
-}
-div.actinideos{
-    background-color: #05817b;
-
-}
 div#legenda {
     margin: 5px 0px;
     border: 1px solid rgba(0, 0, 0, 0.2);

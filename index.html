@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hover.css">
     <link rel="stylesheet" href="./css/overlay.css">
+    <link id='corcss' rel="stylesheet" href="./css/cores/cornormal.css">
     <link rel="icon" href="./img/icones/Logo.png">
 </head>
 
@@ -49,11 +50,12 @@
                     <img class="audio_icone" src="./img/icones/audio ativado.png" alt="Icone de ativar áudio">
                     <img class="audio_icone" src="./img/icones/audio desativado.png" alt="Icone de desativar áudio">
                 </div>
-                <select name="cor" id="cor">
+                <select onchange="mudarcor(document.querySelector('#corcss'), document.querySelector('#cor'))" name="cor" id="cor">
                     <option value="nada">- Modo Daltônico -</option>
                     <option value="deuteranopia">Deuteranopia</option>
                     <option value="protanopia">Protanopia</option>
                     <option value="tritanopia">Tritanopia</option>
+                    <option value="cores normais">Cores normais</option>
                 </select>
             </div>
         </div>
@@ -153,6 +155,7 @@
         </footer>
     </div>
     <script src="./js/main.js" type="module"></script>
+    <script type="text/javascript" src="./js/function/colorblind.js"></script>
     <script src="./js/event/destaqueFalse.js" type="module"></script>
     <script src="./js/event/destaqueTrue.js" type="module"></script>
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
