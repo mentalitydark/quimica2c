@@ -139,7 +139,7 @@ export const elementos = [{
     curiosidade: 'Encontra-se em minerais (principalmente em criolita, fluorita e fluorapatita) Utilizado no enriquecimento do urânio para usinas nucleares Utilizado em cremes dentais para diminuir a incidência de cáries.',
     distribuicao: '1s2 2s2 2p5',
     estado: 'Gasoso',
-    familia: 'Halogênio',
+    familia: 'Halogênios',
     periodo: '2º Período'
 },
 {
@@ -555,7 +555,7 @@ export const elementos = [{
     curiosidade: 'Bromo é o único não-metal que forma uma substância simples líquida nas condições ambientes.',
     distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p5',
     estado: 'Líquido',
-    familia: 'Halogênio',
+    familia: 'Halogênios',
     periodo: '4º Período'
 },
 {
@@ -820,14 +820,14 @@ export const elementos = [{
     massa: '127,6',
     atomico: 52,
     class: 'semi_metal',
-    fusao: '°C',
-    ebulicao: '°C',
-    valencia: 'possui  elétron ()',
-    nox: 'nox',
+    fusao: '271 °C',
+    ebulicao: '987 °C',
+    valencia: 'possui 6 elétron (O)',
+    nox: '-2 +4 +6',
     curiosidade: '',
-    distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p4',
+    estado: 'Sólido',
+    familia: 'Calcogênios',
     periodo: '5º Período'
 },
 {
@@ -836,14 +836,14 @@ export const elementos = [{
     massa: '126,9',
     atomico: 53,
     class: 'halogenio',
-    fusao: '°C',
-    ebulicao: '°C',
-    valencia: 'possui  elétron ()',
-    nox: 'nox',
+    fusao: '114 °C',
+    ebulicao: '182 °C',
+    valencia: 'possui 7 elétron (O)',
+    nox: '-1 +1 +5 +7',
     curiosidade: '',
-    distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p5',
+    estado: 'Sólido',
+    familia: 'Halogênios',
     periodo: '5º Período'
 },
 {
@@ -852,14 +852,14 @@ export const elementos = [{
     massa: '131,29',
     atomico: 54,
     class: 'gas_nobre',
-    fusao: '°C',
-    ebulicao: '°C',
-    valencia: 'possui  elétron ()',
-    nox: 'nox',
+    fusao: '-112 °C',
+    ebulicao: '-107 °C',
+    valencia: 'possui 8 elétron (O)',
+    nox: '+2 +4 +6 +8',
     curiosidade: '',
-    distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6',
+    estado: 'Gasoso',
+    familia: 'Gases Nobres',
     periodo: '5º Período'
 },
 {
@@ -868,15 +868,15 @@ export const elementos = [{
     massa: '132,91',
     atomico: 55,
     class: 'metal_alcalino',
-    fusao: '°C',
-    ebulicao: '°C',
-    valencia: 'possui  elétron ()',
-    nox: 'nox',
+    fusao: '28 °C',
+    ebulicao: '705 °C',
+    valencia: 'possui 1 elétron (P)',
+    nox: '+1',
     curiosidade: '',
-    distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    distribuicao: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1',
+    estado: 'Sólido',
+    familia: 'Metais Alcalinos',
+    periodo: '6º Período'
 },
 {
     nome: 'Bário',
@@ -890,9 +890,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais Alcalino Terrosos',
+    periodo: '6º Período'
 },
 {
     nome: 'Lantânio',
@@ -906,9 +906,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Cério',
@@ -922,9 +922,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Praseodímix',
@@ -938,9 +938,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Neodímio',
@@ -954,9 +954,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Promécio',
@@ -970,9 +970,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Samário',
@@ -986,9 +986,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Európio',
@@ -1002,9 +1002,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Gadolínio',
@@ -1018,9 +1018,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Térbio',
@@ -1034,9 +1034,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Disprósio',
@@ -1050,9 +1050,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Hólmio',
@@ -1066,9 +1066,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Erbio',
@@ -1082,9 +1082,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Túlio',
@@ -1098,9 +1098,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Itérbio',
@@ -1114,9 +1114,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Lutécio',
@@ -1130,9 +1130,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Lantanídeos',
+    periodo: '6º Período'
 },
 {
     nome: 'Háfnio',
@@ -1146,9 +1146,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Tântalo',
@@ -1162,9 +1162,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Tungstênio',
@@ -1178,9 +1178,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Rênio',
@@ -1194,9 +1194,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Ósmio',
@@ -1210,9 +1210,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Irídio',
@@ -1226,9 +1226,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Platina',
@@ -1242,9 +1242,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Ouro',
@@ -1258,9 +1258,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Sólido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Mercúrio',
@@ -1274,9 +1274,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
+    estado: 'Líquido',
     familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    periodo: '6º Período'
 },
 {
     nome: 'Tálio',
@@ -1290,9 +1290,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Família do Boro',
+    periodo: '6º Período'
 },
 {
     nome: 'Chumbo',
@@ -1306,9 +1306,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Família do Carbono',
+    periodo: '6º Período'
 },
 {
     nome: 'Bismuto',
@@ -1322,9 +1322,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Família do Nitrogênio',
+    periodo: '6º Período'
 },
 {
     nome: 'Polônios',
@@ -1338,9 +1338,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Calcigênios',
+    periodo: '6º Período'
 },
 {
     nome: 'Astato',
@@ -1354,9 +1354,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Halogênios',
+    periodo: '6º Período'
 },
 {
     nome: 'Radônio',
@@ -1370,9 +1370,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Gases Nobres',
+    periodo: '6º Período'
 },
 {
     nome: 'Frâncio',
@@ -1386,9 +1386,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais Alcalinos',
+    periodo: '7º Período'
 },
 {
     nome: 'Rádio',
@@ -1402,9 +1402,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais Alcalino Terrosos',
+    periodo: '7º Período'
 },
 {
     nome: 'Actínio',
@@ -1418,9 +1418,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Tório',
@@ -1434,9 +1434,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Protactínio',
@@ -1450,9 +1450,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Urânio',
@@ -1466,9 +1466,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Neptúnio',
@@ -1482,9 +1482,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Plutônio',
@@ -1498,9 +1498,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Amerício',
@@ -1514,9 +1514,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Cúrio',
@@ -1530,9 +1530,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Berquélios',
@@ -1546,9 +1546,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Califórnio',
@@ -1562,9 +1562,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Einstênio',
@@ -1578,9 +1578,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Férmio',
@@ -1594,9 +1594,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Mendelévio',
@@ -1610,9 +1610,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Nobélio',
@@ -1626,9 +1626,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Laurêncio',
@@ -1642,9 +1642,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Actinídeos',
+    periodo: '7º Período'
 },
 {
     nome: 'Rutherfórdio',
@@ -1658,9 +1658,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Dúbnio',
@@ -1674,9 +1674,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Seabórgio',
@@ -1690,9 +1690,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Bóhrio',
@@ -1706,9 +1706,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Hássio',
@@ -1722,9 +1722,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Meitnério',
@@ -1738,9 +1738,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Darmstádio',
@@ -1754,9 +1754,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Roentgênio',
@@ -1770,9 +1770,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Copernício',
@@ -1786,9 +1786,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'Metais Alcalinos',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Metais de Transição',
+    periodo: '7º Período'
 },
 {
     nome: 'Nihônio',
@@ -1802,9 +1802,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Família do Boro',
+    periodo: '7º Período'
 },
 {
     nome: 'Fleróvio',
@@ -1818,9 +1818,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Família do Carbono',
+    periodo: '7º Período'
 },
 {
     nome: 'Moscóvio',
@@ -1834,9 +1834,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Família do Nitrogênio',
+    periodo: '7º Período'
 },
 {
     nome: 'Livermório',
@@ -1850,9 +1850,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Calcigênios',
+    periodo: '7º Período'
 },
 {
     nome: 'Tenessina',
@@ -1866,9 +1866,9 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Sólido',
+    familia: 'Halogênios',
+    periodo: '7º Período'
 },
 {
     nome: 'Oganessônio',
@@ -1882,7 +1882,7 @@ export const elementos = [{
     nox: 'nox',
     curiosidade: '',
     distribuicao: 'distribuição',
-    estado: 'estado',
-    familia: 'familia',
-    periodo: 'º Período'
+    estado: 'Gasoso',
+    familia: 'Gases Nobres',
+    periodo: '7º Período'
 }];

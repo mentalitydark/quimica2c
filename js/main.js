@@ -63,14 +63,15 @@ for (let i = 1; i <= 18; i++) {
 }
 geradorTabela(tabela, elementos, tbody);
 responsiveVoice.setDefaultVoice('Brazilian Portuguese Male');
-document.addEventListener('keydown', function aux() {
+function aux() {
     document.removeEventListener('keydown', aux);
-    blindmode(function(decision) {
+    document.removeEventListener('click', aux);
+    blindmode(function (decision) {
         // overlayGenStart();
         if (decision) {
             responsiveVoice.cancel();
             console.log('Modo para cegos');
-            moverteclado(function(cb) {
+            moverteclado(function (cb) {
                 console.log(cb);
                 if (cb === 't') {
                     overlayGenTab(tbody);
@@ -82,13 +83,15 @@ document.addEventListener('keydown', function aux() {
         } else {
             responsiveVoice.cancel();
             console.log('Modo para não cegos');
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 overlayGenTab(tbody);
             });
-            mouse(function(nat) {
+            mouse(function (nat) {
                 overlayGenElement(nat * 1, tbody);
             });
 
         }
     });
-});
+}
+document.addEventListener('keydown', aux);
+document.addEventListener('click', aux)
