@@ -325,19 +325,3 @@ sup {
     vertical-align: super;
     font-size: smaller;
 }
-@media(max-width: 1150px) {
-    body {
-        zoom: 0.9;
-    }
-}
-@media(max-height: 570px) {
-    body {
-        zoom: 0.9;
-    }
-}
-
-@media(max-width: 1050px) {
-    body {
-        zoom: 0.85;
-    }
-}

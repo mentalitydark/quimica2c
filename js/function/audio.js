@@ -49,3 +49,6 @@ export function audioOverlayElemento(num) {
     + ' ; ' + e + ' ; ' + f + ' ; ' + g + ' ; ' + h + ' ; ' + i
     + ' ; ' + j + ' ; ' + k + ' ' + l);
 }
+export function audioFieldSet(audio) {
+    responsiveVoice.speak(audio.firstElementChild.textContent);
+}

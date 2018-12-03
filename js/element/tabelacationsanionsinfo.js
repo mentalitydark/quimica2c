@@ -1,5 +1,5 @@
 export const cationsAnionsSigla = [
-    'H', 'H3O', 'Li', 'Na', 'K', 'Rb', 'Cs', 'Ag', 'NH4', 'Be',
+    'H', 'H30', 'Li', 'Na', 'K', 'Rb', 'Cs', 'Ag', 'NH4', 'Be',
     'Mg', 'Ca', 'Sr', 'Ba', 'Ra', 'Zn', 'Al', 'Bi', 'Cu', 'Hg',
     'Fe', 'Co', 'Ni', 'Cr', 'Au', 'Sn', 'Pb', 'Pt', 'Mn', 'Ti',
     'Cl', 'Br', 'I', 'F', 'ClO', 'ClO2', 'ClO3', 'ClO4', 'BrO', 'BrO2',
