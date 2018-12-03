@@ -57,10 +57,11 @@ const funcao1 = function(str) {
     for (let i = 0; i < str.length; i++) {
         if (str[i]==='O' || str[i]==='o') {
             res += 'Ó.';
+        } else if (str[i]==='E' || str[i]==='e') {
+            res += 'ê.';
         } else {
             res += str[i]+'.';
         }
-
     }
     return res;
 };
