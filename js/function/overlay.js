@@ -135,19 +135,7 @@ export function overlayGenElement(nat, tbody) {
     sair.className = 'sair';
     overlay.appendChild(sair);
     sair.addEventListener('click', function() {
-        const overlay = document.querySelectorAll('.overlayElemento');
-        for (let i = 0; i < overlay.length; i++) {
-            overlay[i].remove();
-        }
-    });
-    document.addEventListener('keydown', function(a) {
-        if (a.keyCode === 27) {
-            const overlay = document.querySelectorAll('.overlayElemento');
-            for (let i = 0; i < overlay.length; i++) {
-                overlay[i].remove();
-            }
-            responsiveVoice.cancel();
-        }
+        const overlay = document.querySelector('.overlayElemento').remove();
     });
 }
 export function overlayGenTab(tbody) {
@@ -282,17 +270,12 @@ export function overlayGenTab(tbody) {
     }
     const sair = document.createElement('button');
     sair.textContent = 'sair';
+    sair.className = 'sair1';
     overlay.appendChild(sair);
     background.appendChild(overlay);
     tbody.appendChild(background);
     sair.addEventListener('click', function(a) {
         document.querySelector('.overlayTabBackground').remove();
-    });
-    document.addEventListener('keydown', function(a) {
-        if (a.keyCode === 27) {
-            document.querySelector('.overlayTabBackground').remove();
-            responsiveVoice.cancel();
-        }
     });
 }
 
