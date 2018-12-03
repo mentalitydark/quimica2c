@@ -2,7 +2,7 @@ div.nao_metal {
     background-color: #00406C;
 }
 div.metal_alcalino {
-    background-color: #FDBE0C;
+    background-color: rgb(239, 243, 18);
 }
 div.semi_metal {
     background-color: #D49F23;
@@ -20,7 +20,7 @@ div.metal_alcalino_terroso {
     background-color: #B48714;
 }
 div.halogenio{
-    background-color: #B34E53;
+    background-color: rgb(99, 142, 236);
 }
 div.metal_de_transicao{
     background-color: #725600;
