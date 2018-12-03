@@ -10,7 +10,7 @@ let t = false;
 let t1 = true;
 const tc = [0,1];
 const er = [1,2];
-const eu = 0;
+let eu = 0;
 export function moverteclado(cb) {
     document.addEventListener('keydown', function(e) {
         if (e.keyCode === 84 && t === false) {
