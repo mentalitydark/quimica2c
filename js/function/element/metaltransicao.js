@@ -1,7 +1,7 @@
-export const lantanideosTrue = function(
+export const metaltransicaoTrue = function(
     metalalca, semimetal, metalrepre
-    , gasnobre, naometal, metalalcaterro
-    , halogenio, metaltransicao, actinideos
+    , lantanideos, gasnobre, metalalcaterro
+    , halogenio, naometal, actinideos
 ) {
     naometal.forEach(function(div) {
         div.classList.add('invisivel');
@@ -9,13 +9,13 @@ export const lantanideosTrue = function(
     semimetal.forEach(function(div) {
         div.classList.add('invisivel');
     });
-    metaltransicao.forEach(function(div) {
+    metalrepre.forEach(function(div) {
+        div.classList.add('invisivel');
+    });
+    lantanideos.forEach(function(div) {
         div.classList.add('invisivel');
     });
     gasnobre.forEach(function(div) {
-        div.classList.add('invisivel');
-    });
-    metalrepre.forEach(function(div) {
         div.classList.add('invisivel');
     });
     metalalca.forEach(function(div) {
@@ -31,10 +31,10 @@ export const lantanideosTrue = function(
         div.classList.add('invisivel');
     });
 };
-export const lantanideosFalse = function(
+export const metaltransicaoFalse = function(
     metalalca, semimetal, metalrepre
-    , gasnobre, naometal, metalalcaterro
-    , halogenio, metaltransicao, actinideos
+    , lantanideos, gasnobre, metalalcaterro
+    , halogenio, naometal, actinideos
 ) {
     naometal.forEach(function(div) {
         div.classList.remove('invisivel');
@@ -42,13 +42,13 @@ export const lantanideosFalse = function(
     semimetal.forEach(function(div) {
         div.classList.remove('invisivel');
     });
-    metaltransicao.forEach(function(div) {
+    metalrepre.forEach(function(div) {
+        div.classList.remove('invisivel');
+    });
+    lantanideos.forEach(function(div) {
         div.classList.remove('invisivel');
     });
     gasnobre.forEach(function(div) {
-        div.classList.remove('invisivel');
-    });
-    metalrepre.forEach(function(div) {
         div.classList.remove('invisivel');
     });
     metalalca.forEach(function(div) {

@@ -1,69 +1,63 @@
-export const metal_alcalino_terrosoTrue = function (
-    nao_metal, semi_metal, metal_repre
-    , lantanideos, gas_nobre, metal_alca
-    , halogenio, metal_transicao, actinideos
+export const naometalTrue = function (
+    metalalca, semimetal, metalrepre
+    , lantanideos, gasnobre, metalalcaterro
+    ,halogenio, metaltransicao, actinideos
 ) {
-    nao_metal.forEach(function (div) {
+    metalalca.forEach(function (div) {
         div.classList.add('invisivel')
     });
-    semi_metal.forEach(function (div) {
+    semimetal.forEach(function (div) {
         div.classList.add('invisivel')
     });
-    metal_repre.forEach(function (div) {
+    metalrepre.forEach(function (div) {
         div.classList.add('invisivel')
     });
     lantanideos.forEach(function (div) {
         div.classList.add('invisivel')
     });
-    gas_nobre.forEach(function (div) {
+    gasnobre.forEach(function (div) {
         div.classList.add('invisivel')
     });
-    metal_alca.forEach(function (div) {
+    metalalcaterro.forEach(function (div) {
         div.classList.add('invisivel')
     });
     halogenio.forEach(function (div) {
         div.classList.add('invisivel')
     });
-    metal_transicao.forEach(function (div) {
+    metaltransicao.forEach(function (div) {
         div.classList.add('invisivel')
     });
     actinideos.forEach(function (div) {
         div.classList.add('invisivel')
     });
 }
-export const metal_alcalino_terrosoFalse = function (
-    nao_metal
-    , semi_metal
-    , metal_repre
-    , lantanideos
-    , gas_nobre
-    , metal_alca
-    , halogenio
-    , metal_transicao
-    , actinideos
+export const naometalFalse = function (
+    metalalca, semimetal, metalrepre
+    , lantanideos, gasnobre, metalalcaterro
+    , halogenio, metaltransicao, actinideos
 ) {
-    nao_metal.forEach(function (div) {
+    metalalca.forEach(function (div) {
         div.classList.remove('invisivel')
     });
-    semi_metal.forEach(function (div) {
+    semimetal.forEach(function (div) {
         div.classList.remove('invisivel')
     });
-    metal_repre.forEach(function (div) {
+    metalrepre.forEach(function (div) {
         div.classList.remove('invisivel')
     });
     lantanideos.forEach(function (div) {
         div.classList.remove('invisivel')
     });
-    gas_nobre.forEach(function (div) {
+    gasnobre.forEach(function (div) {
         div.classList.remove('invisivel')
     });
-    metal_alca.forEach(function (div) {
+    metalalcaterro.forEach(function (div) {
         div.classList.remove('invisivel')
     });
     halogenio.forEach(function (div) {
         div.classList.remove('invisivel')
     });
-    metal_transicao.forEach(function (div) {
+    metaltransicao.forEach(function (div) {
         div.classList.remove('invisivel')
     });
     actinideos.forEach(function (div) {

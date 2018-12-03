@@ -168,7 +168,6 @@ export function moverteclado(cb) {
             audioFieldSet(document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test]);
         }
         if (e.keyCode === 27 && t1 === false && t === true && t2 === false) {
-            console.log('oi');
             t= false;
             document.querySelector('.sair1').click();
         }

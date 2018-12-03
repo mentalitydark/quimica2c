@@ -66,11 +66,11 @@ responsiveVoice.setDefaultVoice('Brazilian Portuguese Male');
 function aux() {
     document.removeEventListener('keydown', aux);
     document.removeEventListener('click', aux);
-    blindmode(function (decision) {
+    blindmode(function(decision) {
         if (decision) {
             responsiveVoice.cancel();
             console.log('Modo para cegos');
-            moverteclado(function (cb) {
+            moverteclado(function(cb) {
                 if (cb === 't' || cb === 'T') {
                     responsiveVoice.cancel();
                     overlayGenTab(tbody);
@@ -82,16 +82,17 @@ function aux() {
         } else {
             responsiveVoice.cancel();
             console.log('Modo para não cegos');
-            button.addEventListener('click', function () {
+            button.addEventListener('click', function() {
                 overlayGenTab(tbody);
             });
-            mouse(function (nat) {
+            mouse(function(nat) {
                 overlayGenElement(nat * 1, tbody);
             });
-
         }
     });
 }
 document.addEventListener('keydown', aux);
-document.addEventListener('click', aux)
-document.addEventListener('keypress', function(event) {event.key === ' ' ? responsiveVoice.cancel() : '';})
+document.addEventListener('click', aux);
+document.addEventListener('keypress', function(event) {
+    event.key === ' ' ? responsiveVoice.cancel() : '';
+});

@@ -1,6 +1,6 @@
-export const lantanideosTrue = function(
-    metalalca, semimetal, metalrepre
-    , gasnobre, naometal, metalalcaterro
+export const metalrepresentativoTrue = function(
+    metalalca, semimetal, naometal
+    , lantanideos, gasnobre, metalalcaterro
     , halogenio, metaltransicao, actinideos
 ) {
     naometal.forEach(function(div) {
@@ -12,10 +12,10 @@ export const lantanideosTrue = function(
     metaltransicao.forEach(function(div) {
         div.classList.add('invisivel');
     });
-    gasnobre.forEach(function(div) {
+    lantanideos.forEach(function(div) {
         div.classList.add('invisivel');
     });
-    metalrepre.forEach(function(div) {
+    gasnobre.forEach(function(div) {
         div.classList.add('invisivel');
     });
     metalalca.forEach(function(div) {
@@ -31,9 +31,9 @@ export const lantanideosTrue = function(
         div.classList.add('invisivel');
     });
 };
-export const lantanideosFalse = function(
-    metalalca, semimetal, metalrepre
-    , gasnobre, naometal, metalalcaterro
+export const metalrepresentativoFalse = function(
+    metalalca, semimetal, naometal
+    , lantanideos, gasnobre, metalalcaterro
     , halogenio, metaltransicao, actinideos
 ) {
     naometal.forEach(function(div) {
@@ -45,10 +45,10 @@ export const lantanideosFalse = function(
     metaltransicao.forEach(function(div) {
         div.classList.remove('invisivel');
     });
-    gasnobre.forEach(function(div) {
+    lantanideos.forEach(function(div) {
         div.classList.remove('invisivel');
     });
-    metalrepre.forEach(function(div) {
+    gasnobre.forEach(function(div) {
         div.classList.remove('invisivel');
     });
     metalalca.forEach(function(div) {
