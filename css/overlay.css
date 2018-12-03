@@ -296,3 +296,13 @@ fieldset > div:hover {
     position: relative;
     padding-top: 10px;
 }
+@media(max-width: 1200px) {
+    .overlayStartup {
+        font-size: 0.9em
+    }
+}
+@media(max-width: 1050px) {
+.overlayStartup {
+        font-size: 0.8em
+    }
+}
