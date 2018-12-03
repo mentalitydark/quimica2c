@@ -203,6 +203,7 @@ export function moverteclado(cb) {
             bloco = true;
             trava = true;
             document.querySelector('.sair1').click();
+            responsiveVoice.speak('Tabela Periódica');
         }
         if (e.keyCode === 27 && t2 === true && t=== true && t3=== true) {
             document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = '';
@@ -224,6 +225,7 @@ export function moverteclado(cb) {
             trava = true;
             responsiveVoice.cancel();
             document.querySelector('.sair').click();
+            responsiveVoice.speak('Tabela Periódica');
         }
     });
 }
