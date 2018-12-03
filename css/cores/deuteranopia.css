@@ -1,8 +1,8 @@
 div.nao_metal {
-    background-color: #00406C;
+    background-color: rgb(2, 25, 41);
 }
 div.metal_alcalino {
-    background-color: rgb(239, 243, 18);
+    background-color: rgb(255, 201, 53);
 }
 div.semi_metal {
     background-color: #D49F23;
@@ -11,21 +11,21 @@ div.metal_representativo {
     background-color: #909ACE;
 }
 div.lantanideos {
-    background-color: #004C81;
+    background-color: rgb(0, 77, 133);
 }
 div.gas_nobre {
     background-color: #207CD3;
 }
 div.metal_alcalino_terroso {
-    background-color: #B48714;
+    background-color: rgb(124, 99, 34);
 }
 div.halogenio{
-    background-color: rgb(99, 142, 236);
+    background-color: #4b4b4b;
 }
 div.metal_de_transicao{
-    background-color: #725600;
+    background-color: #332b12;
 }
 div.actinideos{
-    background-color: #716977;
+    background-color: #707070;
 
 }
