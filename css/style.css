@@ -164,16 +164,16 @@ div#legenda {
     padding: 2px;
     cursor: default;
 }
-div.legenda_destaque:not(:first-child) {
+div.legendadestaque:not(:first-child) {
     margin-top: 5px;
 }
-div.legenda_destaque {
+div.legendadestaque {
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.2s ease;
 }
-div.elemento_legenda{
+div.elementolegenda{
     width: 20px;
     height: 20px;
     border: 1px solid black;
@@ -227,7 +227,7 @@ p.massa {
     font-size: 0.6em;
     color: white;
 }
-div#div_legenda {
+div#divlegenda {
     display: flex;
     justify-content: flex-end;
 }

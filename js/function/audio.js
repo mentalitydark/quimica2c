@@ -52,3 +52,21 @@ export function audioOverlayElemento(num) {
 export function audioFieldSet(audio) {
     responsiveVoice.speak(audio.firstElementChild.textContent);
 }
+const funcao1 = function(str) {
+    let res = '';
+    for (let i = 0; i < str.length; i++) {
+        if (str[i]==='O' || str[i]==='o') {
+            res += 'Ó.';
+        } else {
+            res += str[i]+'.';
+        }
+
+    }
+    return res;
+};
+export function audiospan(a, b) {
+    console.log(a);
+    console.log(b);
+    const c = (funcao1(a) + b);
+    responsiveVoice.speak(c);
+}

@@ -1,7 +1,8 @@
 import {
     audioElemento,
     audioFamilia,
-    audioFieldSet
+    audioFieldSet,
+    audiospan
 } from './audio.js';
 const mover = [0, 0]; // mover
 let enter = true;
@@ -10,9 +11,11 @@ let trava = true;
 let t = false;
 let t1 = true;
 let t2 = false;
+let t3 = true;
 const tc = [0, 1];
 let ps = 0; // posição na tabela cation e anions
 let test = 0;
+let move = 0;
 export function moverteclado(cb) {
     // eslint-disable-next-line max-statements
     document.addEventListener('keydown', function(e) {
@@ -107,11 +110,6 @@ export function moverteclado(cb) {
             mover[1] = 0;
             responsiveVoice.cancel();
         }
-        if (e.keyCode === 27 && bloco === false && t=== false) {
-            bloco = true;
-            trava = true;
-            document.querySelector('.sair').click();
-        }
         if ( e.keyCode === 40 && t1 === false && t=== true ) {
             document.querySelectorAll('.overlayTab')[0].children[tc[ps]].classList.remove('bg'+tc[ps]);
             document.querySelectorAll('.overlayTab')[0].children[tc[ps]].style.backgroundColor = '';
@@ -141,6 +139,14 @@ export function moverteclado(cb) {
             document.querySelectorAll('.overlayTab')[0].children[tc[ps]].style.backgroundColor = 'rgb(250, 168, 15)';
             audioFieldSet(document.querySelectorAll('.bg'+tc[ps])[0]);
         }
+        if (e.keyCode === 13 && t2 === true && t1 === true) {
+            t3 = false;
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = '';
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].style.backgroundColor = 'rgb(250, 168, 15)';
+            const h1 = document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].children[0].textContent;
+            const h2 = document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].children[1].textContent;
+            audiospan(h1, h2);
+        }
         if (e.keyCode === 13 && t1 === false && t=== true) {
             t1 = true;
             t2 = true;
@@ -149,7 +155,7 @@ export function moverteclado(cb) {
             document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = 'rgb(250, 168, 15)';
             audioFieldSet( document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test]);
         }
-        if (e.keyCode === 39 && t2 === true && t=== true) {
+        if (e.keyCode === 39 && t2 === true && t=== true && t3 === true) {
             document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = '';
             test++;
             if (test > document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset').length-1) {
@@ -158,7 +164,7 @@ export function moverteclado(cb) {
             document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = 'rgb(250, 168, 15)';
             audioFieldSet(document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test]);
         }
-        if (e.keyCode === 37 && t2 === true && t=== true) {
+        if (e.keyCode === 37 && t2 === true && t=== true && t3 === true) {
             document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = '';
             test--;
             if (test < 0) {
@@ -167,17 +173,57 @@ export function moverteclado(cb) {
             document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = 'rgb(250, 168, 15)';
             audioFieldSet(document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test]);
         }
-        if (e.keyCode === 27 && t1 === false && t === true && t2 === false) {
+        if (e.keyCode === 40 && t3 === false) {
+            responsiveVoice.cancel();
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].style.backgroundColor = '';
+            move++;
+            if (move >document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div').length-1) {
+                move = 0;
+            }
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].style.backgroundColor = 'rgb(250, 168, 15)';
+            const h1 = document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].children[0].textContent;
+            const h2 = document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].children[1].textContent;
+            audiospan(h1, h2);
+        }
+        if (e.keyCode ===38 && t3===false) {
+            responsiveVoice.cancel();
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].style.backgroundColor = '';
+            move--;
+            if (move < 0) {
+                move = document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div').length-1;
+            }
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].style.backgroundColor = 'rgb(250, 168, 15)';
+            const h1 = document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].children[0].textContent;
+            const h2 = document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].children[1].textContent;
+            audiospan(h1, h2);
+        }
+
+        if (e.keyCode === 27 && t1 === false && t === true && t2 === false && t3 === true) {
             t= false;
+            bloco = true;
+            trava = true;
             document.querySelector('.sair1').click();
         }
-        if (e.keyCode === 27 && t2 === true && t=== true) {
+        if (e.keyCode === 27 && t2 === true && t=== true && t3=== true) {
             document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = '';
             audioFieldSet(document.querySelectorAll('.overlayTab')[0].children[tc[ps]]);
             t2 = false;
             t1 = false;
             test = 0;
             document.querySelectorAll('.overlayTab')[0].children[tc[ps]].style.backgroundColor = 'rgb(250, 168, 15)';
+        }
+        if (e.keyCode === 27 && t3 === false && t2 === true ) {
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].querySelectorAll('div')[move].style.backgroundColor = '';
+            document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test].style.backgroundColor = 'rgb(250, 168, 15)';
+            audioFieldSet(document.querySelectorAll('.bg'+tc[ps])[0].querySelectorAll('fieldset')[test]);
+            t3 = true;
+            move = 0;
+        }
+        if (e.keyCode === 27 && bloco === false && t=== false) {
+            bloco = true;
+            trava = true;
+            responsiveVoice.cancel();
+            document.querySelector('.sair').click();
         }
     });
 }
