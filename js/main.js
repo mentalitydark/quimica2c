@@ -69,7 +69,6 @@ function aux() {
     blindmode(function(decision) {
         if (decision) {
             responsiveVoice.cancel();
-            console.log('Modo para cegos');
             moverteclado(function(cb) {
                 if (cb === 't' || cb === 'T') {
                     responsiveVoice.cancel();
@@ -81,7 +80,6 @@ function aux() {
             });
         } else {
             responsiveVoice.cancel();
-            console.log('Modo para não cegos');
             button.addEventListener('click', function() {
                 overlayGenTab(tbody);
             });

@@ -79,10 +79,6 @@ export function geradorTabela(tabela, elementos, tbody) {
                     td.appendChild(div);
                     tr.appendChild(td);
                 }
-                // if (tabela[a][i] === '' && (i === 7 || i === 8)) {
-                //     console.log('tnc');
-
-                // }
             }
         }
     }

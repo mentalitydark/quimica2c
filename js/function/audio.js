@@ -65,8 +65,6 @@ const funcao1 = function(str) {
     return res;
 };
 export function audiospan(a, b) {
-    console.log(a);
-    console.log(b);
     const c = (funcao1(a) + b);
     responsiveVoice.speak(c);
 }
