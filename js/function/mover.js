@@ -10,6 +10,7 @@ let trava = true;
 let t = false;
 let t1 = true;
 let t2 = false;
+const fieldset = 1;
 const tc = [0, 1];
 let ps = 0; // posição na tabela cation e anions
 let test = 0;
