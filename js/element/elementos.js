@@ -98,7 +98,7 @@ export const elementos = [{
     valencia: `possui 4 elétrons (L)`,
     nox: `-4 -2 +2 +4`,
     curiosidade: `0,5% da massa do Universo 23% da massa
-    de um ser humano Utilizando na metalurgia para produção
+    de um ser humano. Utilizado na metalurgia para produção
     de aço Encontra-se na forma de grafite, em gás natural e etc.`,
     distribuicao: `1s2 2s2 2p2`,
     estado: `Sólido`,
@@ -133,7 +133,7 @@ export const elementos = [{
     valencia: `possui 6 elétrons (L)`,
     nox: `-2 -1 -1/2 +2`,
     curiosidade: `1% da massa do Universo 86% da massa do
-    Oceano Encontrando na superfice da Terra e em minerais
+    Oceano Encontrando na superfice da Terra e em minerais.
     Usado em soldagem, cortes de metais, instalações hospitalares
     para manutenção da vida e etc.`,
     distribuicao: `1s2 2s2 2p4`,
@@ -152,7 +152,7 @@ export const elementos = [{
     valencia: `possui 7 elétrons (L)`,
     nox: `-1`,
     curiosidade: `Encontra-se em minerais (principalmente em criolita,
-        fluorita e fluorapatita) Utilizado no enriquecimento do urânio
+        fluorita e fluorapatita). Utilizado no enriquecimento do urânio
         para usinas nucleares Utilizado em cremes dentais para diminuir
         a incidência de cáries.`,
     distribuicao: `1s2 2s2 2p5`,
@@ -188,7 +188,7 @@ export const elementos = [{
     valencia: `possui 1 elétron (M)`,
     nox: `+1`,
     curiosidade: `Encontra-se em diversos minerais, principalmente
-    no sal comum Usado na indústria química, na cozinha (sal de cozinha),
+    no sal comum. Usado na indústria química, na cozinha (sal de cozinha),
     utilizado como trocador de calor em reatores nucleares.`,
     distribuicao: `1s2 2s2 2p6 3s1`,
     estado: `Sólido`,
@@ -206,7 +206,7 @@ export const elementos = [{
     valencia: `possui 2 elétron (M)`,
     nox: `+2`,
     curiosidade: `Encontra-se em minerais como a dolomita,
-    diópsido e etc Usado em pirotecnia, em rodas por ser
+    diópsido e etc. Usado em pirotecnia, em rodas por ser
     leve, em sistemas de tratamento de água e etc.`,
     distribuicao: `1s2 2s2 2p6 3s2`,
     estado: `Sólido`,
@@ -224,7 +224,7 @@ export const elementos = [{
     valencia: `possui 3 elétron (M)`,
     nox: `+3`,
     curiosidade: `Normalmente encontrado em minerais
-    (óxidos e silicatos) Utilizado em utensílios de cozinha, latas e etc.`,
+    (óxidos e silicatos). Utilizado em utensílios de cozinha, latas e etc.`,
     distribuicao: `1s2 2s2 2p6 3s2 3p1`,
     estado: `Sólido`,
     familia: `Família do Boro`,
