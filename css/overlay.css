@@ -1,21 +1,23 @@
 .overlayElemento {
-    position: fixed;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 50%;
-    top: 20%;
-    left: 20%;
-    right: 20%;
-    bottom: 20%;
+    max-width: 50%;
+    max-height: 50%;
     z-index: 2;
-    background-color: rgba(106, 198, 252, 1);
+    background-color: #383838;
     border: 1px solid black;
-    padding: 20px 15px 20px 15px;
+    padding: 60px 15px 20px 15px;
     justify-content: center;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 34px 3px rgba(0, 0, 0, 0.3), 10px 10px 50px 2px rgba(0, 0, 0, .5);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
+.overlayElemento * {
+    color: #fff!important;
+}
+
 .overlayElemento span {
     margin-left: 5px;
 }
@@ -37,7 +39,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, .2);
-    border-radius: 20px
+    border-radius: 2px
 }
 .overlayElemento > div:first-child > div:last-child {
     display: flex;
@@ -49,19 +51,19 @@
 }
 .overlayElemento > button {
     border: 1px solid rgba(0, 0, 0, 0.18);
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.3), 5px 4px 50px 1px rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    background-color: #686868;
     position: absolute;
-    bottom: 10px;
+    top: 5px;
+    right: 5px;
     padding: 5px 10px;
     text-align: center;
     font-size: 1em;
     font-weight: 1000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 .overlayElemento > button:hover {
-    background-color: rgba(74, 185, 250, 1);
+    background-color: #585858;
     cursor: pointer;
 }
 div.element{
@@ -69,13 +71,15 @@ div.element{
     height: 100px;
     box-sizing: border-box;
     text-align: center;
-    color: white;
     margin: 0.4px;
-    border-radius: 10px;
+    border: 1px solid #fff;
     padding: 2px;
-    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18);
     cursor: default;
 }
+div.element * {
+    color: #383838!important;
+}
+
 .numeroO {
     font-size: 1.5em;
     display: block;
@@ -83,7 +87,6 @@ div.element{
 }
 .siglaO {
     font-size: 1.7em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-weight: bolder;
 }
 .nomeO,
@@ -93,7 +96,6 @@ div.element{
 }
 .estado {
     font-size: 1.1em;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     font-weight: bolder
 }
 .fusao,
@@ -115,8 +117,7 @@ div.element{
 .curiosidade {
     border: 1px solid black;
     font-weight: bold;
-    text-decoration: underline;
-    border-radius: 30px;
+    border-radius: 2px;
     background-color: rgba(255, 255, 255, .2);
 }
 .estado {
@@ -136,28 +137,30 @@ div.element{
     right: 0%;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content:center
 }
 .overlayStartup {
-    position: fixed;
     z-index: 4;
-    background-color: rgba(106, 198, 252, 1);
-    top: 36%;
-    bottom: 36%;
-    left: 36%;
-    right: 36%;
-    width: 20%;
-    height: 15%;
+    background-color: #383838;
+    max-width: 30%;
+    max-height: 25%;
     text-align: center;
     padding: 10px 16px;
     font-weight: bolder;
     border: 1px solid rgba(0, 0, 0, .6);
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 20px 7px rgba(0, 0, 0, .3), 2px 3px 10px 2px rgba(0, 0, 0, .5);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff!important;
 }
 .overlayStartup span:first-child,
 .overlayStartup span:last-child {
-    color: Red;
+    color: cyan;
     text-decoration: underline;
 }
 .overlayStartup a1 {
@@ -165,41 +168,46 @@ div.element{
     margin: 5px;
 }
 .overlayTab {
-    position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    height: 80%;
-    top: 5%;
-    left: 18%;
-    right: 18%;
-    bottom: 10%;
+    max-width: 80%;
+    max-height: 80%;
     z-index: 2;
-    background-color: rgba(106, 198, 252, 1);
+    background-color: #383838;
     border: 1px solid black;
-    /* padding: 20px 15px 20px 15px; */
-    justify-content: center;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 34px 3px rgba(0, 0, 0, 0.3), 10px 10px 50px 2px rgba(0, 0, 0, .5);
-    overflow: hidden;
-    font-size: 0.9em
+    border-radius: 2px;
+    position: relative;
 }
+.overlayTab * {
+    color: #fff!important;
+}
+
 .anions {
     display: flex;
-    flex-direction: row;
-    overflow: auto;
+    flex-direction: column;
     justify-content: space-between;
-    height: 50%;
-    padding: 0px 10px
+    flex: 1
 }
+.cations legend span {
+    font-size: 0.8em;
+    font-weight: none;
+    margin:0px 2px;
+}
+.cations {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    overflow: auto;
+}
+
 fieldset {
     margin: 5px;
     border: 1px solid rgba(0, 0, 0, .3);
     /* font-size: 0.9em */
     padding: 5px;
     background-color: rgb(110, 143, 248);
-    border-radius: 5px;
+    border-radius: 2px;
 }
 fieldset div {
     display: flex;
@@ -215,23 +223,14 @@ legend {
     font-size: 1em;
     font-weight: bolder
 }
-.cations legend span {
-    font-size: 0.8em;
-    font-weight: none;
-    margin:0px 2px;
-}
-.cations {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    height: 38%;
-}
+
 .monodipositivostop,
 .monopositivos,
 .dipositivos,
-.tripositivosplustop {
+.tripositivosplustop,
+.mononegativos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .trimonodipositivos,
 .tripositivos,
@@ -239,28 +238,22 @@ legend {
     display: flex;
     flex-direction: column;
 }
-.mononegativos {
-    display: flex;
-    flex-direction: row;
-}
+
 .overlayTab button {
     border: 1px solid rgba(0, 0, 0, 0.18);
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.3), 5px 4px 50px 1px rgba(0, 0, 0, .3);
+    border-radius: 2px;
+    background-color: #686868;
     position: absolute;
-    bottom: 2px;
-    left: 5%;
-    right: 5%;
-    padding: 2px 10px;
+    top: 0px;
+    right: -70px;
+    padding: 5px 10px;
     text-align: center;
     font-size: 1em;
     font-weight: 1000;
-    width: 90%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 .overlayTab button:hover {
-    background-color: rgba(0, 60, 255, 0.2);
+    background-color: #585858;
     cursor: pointer;
 }
 .tab {
@@ -273,12 +266,12 @@ fieldset > div:hover {
     background-color: rgb(250, 168, 15);
     cursor: pointer;
 }
-.bg0 { 
+.bg0 {
     display: flex;
     flex-direction: row;
     border: 1px solid rgba(0, 0, 0, 0.18);
     height: 38%;
-    
+
 }
 .bg1{
     display: flex;
@@ -295,5 +288,7 @@ fieldset > div:hover {
 }
 .cations,
 .anions{
-position:relative;
+    position:relative;
+    overflow-y: auto;
+    overflow-x: hidden;
 }

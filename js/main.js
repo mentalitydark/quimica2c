@@ -1,28 +1,15 @@
-import {
-    elementos
-} from './element/elementos.js';
-import {
-    geradorTabela
-} from './function/gerador.js';
-import {
-    blindmode
-} from './function/onstartup.js';
-import {
-    mouse
-} from './function/mouseselect.js';
-import {
-    overlayGenElement,
-    overlayGenTab
-} from './function/overlay.js';
-import {
-    moverteclado
-} from './function/mover.js';
-import {
-    audioOverlayElemento
-} from './function/audio.js';
+import {elementos} from './element/elementos.js';
+import {geradorTabela} from './function/gerador.js';
+import {blindmode} from './function/onstartup.js';
+import {mouse} from './function/mouseselect.js';
+import {overlayGenElement, overlayGenTab} from './function/overlay.js';
+import {moverteclado} from './function/mover.js';
+import {audioOverlayElemento} from './function/audio.js';
+
 const button = document.querySelector('button');
 const tbody = document.querySelector('tbody');
 const thead = document.querySelector('thead');
+
 const tabela = [
     [0, 2, 10, 18, 36, 54, 86, 'MTI', 'MTI'],
     ['', 3, 11, 19, 37, 55, 87, 'MTI', 'MTI'],
@@ -48,12 +35,15 @@ const row = [];
 const tr = document.createElement('tr');
 
 for (let i = 1; i <= 18; i++) {
-    const familia = ['', 'I A', 'II A', 'III B',
-        'IV B', 'V B', 'VI B', 'VII B', 'VIII B',
-        'VIII B', 'VIII B',
-        'I B', 'II B', 'III A', 'IV A', 'V A',
+    const familia = [
+        '', 'I A', 'II A', 'III B',
+        'IV B', 'V B', 'VI B',
+        'VII B', 'VIII B', 'VIII B',
+        'VIII B', 'I B', 'II B',
+        'III A', 'IV A', 'V A',
         'VI A', 'VII A', 'VIII A'
     ];
+
     const th = document.createElement('th');
     row.push(th);
     th.textContent = familia[i];
@@ -84,7 +74,7 @@ function aux() {
                 overlayGenTab(tbody);
             });
             mouse(function(nat) {
-                overlayGenElement(nat * 1, tbody);
+                overlayGenElement(parseInt(nat), tbody);
             });
         }
     });

@@ -131,7 +131,7 @@ export function overlayGenElement(nat, tbody) {
         }
     }
     const sair = document.createElement('button');
-    sair.textContent = 'sair';
+    sair.textContent = 'Sair';
     sair.className = 'sair';
     overlay.appendChild(sair);
     sair.addEventListener('click', function() {
@@ -269,7 +269,7 @@ export function overlayGenTab(tbody) {
         overlay.appendChild(tabcatan);
     }
     const sair = document.createElement('button');
-    sair.textContent = 'sair';
+    sair.textContent = 'Sair';
     sair.className = 'sair1';
     overlay.appendChild(sair);
     background.appendChild(overlay);

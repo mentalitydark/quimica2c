@@ -7,11 +7,10 @@ div.dropdown:hover div.dropdown-content {
 }
 div.dropdown-content > div:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 0.7);
+    color: #383838;
 }
 .btn:hover {
-    background-color: rgba(106, 198, 252, .5);
-    color: rgb(255, 94, 0);
+    background-color: #797979;
 }
 aside:hover {
     transition: 0.2s all 1s ease-in;

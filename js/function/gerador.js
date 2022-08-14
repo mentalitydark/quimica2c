@@ -1,3 +1,6 @@
+/* eslint-disable max-depth */
+/* eslint-disable max-statements */
+/* eslint-disable no-magic-numbers */
 export function geradorTabela(tabela, elementos, tbody) {
     for (let a = 0; a < tabela.length; a++) {
         for (let i = 0; i < tbody.children.length && i < tabela.length; i++) {
@@ -42,7 +45,6 @@ export function geradorTabela(tabela, elementos, tbody) {
                     p2.className = 'massa';
                     div.appendChild(span);
                     div.appendChild(strong);
-                    div.appendChild(p);
                     div.appendChild(p2);
                     div.className = `elemento ${element.class}`;
                     td.appendChild(div);

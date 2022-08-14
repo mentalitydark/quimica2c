@@ -11,9 +11,9 @@
   "author": "Prof. Márcio Torres",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.13.1",
+    "eslint": "^8.22.0",
     "eslint-config-google": "^0.9.1",
-    "live-server": "^1.2.0",
-    "mocha": "^5.1.1"
+    "live-server": "^1.1.0",
+    "mocha": "^10.0.0"
   }
 }

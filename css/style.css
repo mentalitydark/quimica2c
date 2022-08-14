@@ -5,49 +5,27 @@ html, body{
     height: 100%;
 }
 header img#ifrs {
-    width: 20px;
-    height: 30px;
+    height: 25px;
 }
 header img#sia {
-    width: 30px;
-    height: 30px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
 }
-div.dropdown {
-    display: inline-block;
-    position: relative;
-    cursor: default;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: inset -0.5px -0.5px 10px 0.5px rgba(0, 0, 0, 0.15)
-}
-div.dropdown > span {
-    vertical-align: middle;
-}
-div.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 33.141px;
-    right: 0;
-    background-color: rgba(106, 198, 252, .5);
-    border: 1px solid rgba(81, 137, 243, .6);
-    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
-}
-div.dropdown-content > div {
+
+header {
+    background-color: #383838;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    font-size: 1em;
-    margin: 2px;
-    width: 110px;
-    transition-duration: 0.2s;
-    transition-delay: 0s;
-    transition-property: all;
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    height: 35px;
+    color: #fff;
 }
-div.dropdown-content > div > span:last-child {
-    font-size: 0.8em
-}
-div.dropdown-content > div:not(:first-child) {
-    border-top: 1px solid rgba(0,0,0,.2)
-}
+
 .dropupbtn {
     padding: 14px;
     cursor: default
@@ -74,13 +52,6 @@ div.dropdown-content > div:not(:first-child) {
     display: block;
 }
 
-div.separador_header {
-    height: 35px;
-    width: 1px;
-    background-color: rgba(1, 1, 1, 0.2);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-    font-size: 0.7em;
-}
 #audio img:first-child{
     z-index: 1;
 }
@@ -121,19 +92,7 @@ div#divTabela {
     align-items: center;
     z-index: 0;
 }
-header {
-    background-color: rgb(106, 198, 252);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px 0px 10px;
-    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 0.8em;
-    height: 35px;
-}
+
 div.options {
     margin: 2px 10px 0px 10px;
     display: flex;
@@ -141,12 +100,10 @@ div.options {
 }
 select#cor {
     margin-left: 5px;
-    background: url('http://i62.tinypic.com/15xvbd5.png') no-repeat 97% -8px;
     height: 20px;
     width: 140px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    background-color: rgba(106, 198, 252, .2);
+    border-radius: 2px;
 }
 th{
     height: 10px;
@@ -157,11 +114,10 @@ th{
 }
 div#legenda {
     margin: 5px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: rgba(106, 198, 252, .5);
+    background-color: #484848;
+    color: #fff;
     font-size: 0.9em;
-    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 10px 5px 20px rgba(0, 0, 0, 0.18);
-    padding: 2px;
+    padding: 5px;
     cursor: default;
 }
 div.legendadestaque:not(:first-child) {
@@ -176,23 +132,23 @@ div.legendadestaque {
 div.elementolegenda{
     width: 20px;
     height: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+    border: 1px solid white;
 }
 div.elemento{
     width: 50px;
     height: 50px;
     box-sizing: border-box;
     text-align: center;
-    color: white;
-    margin: 0.4px;
-    border-radius: 10px;
+    color: #383838!important;
     padding: 0.5px;
-    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
-    z-index: 0;
     cursor: pointer;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.2em;
 }
 .selecionado {
     border-top: 2px dashed red;
@@ -205,7 +161,6 @@ td.MTI {
     vertical-align: middle;
     font-size: 0.8em;
     font-weight: bold;
-    text-decoration: underline
 }
 span.numero {
     display: block;
@@ -216,8 +171,6 @@ strong.sigla {
     font-weight: bolder;
     font-size: 0.9em;
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
 }
 p.nome{
     font-size: 0.6em;
@@ -225,7 +178,6 @@ p.nome{
 }
 p.massa {
     font-size: 0.6em;
-    color: white;
 }
 div#divlegenda {
     display: flex;
@@ -235,18 +187,18 @@ div.elemento.lantanideos {
     margin-top: 5px;
 }
 footer {
-    background-color: rgb(106, 198, 252);
+    background-color: #383838;
+    color: #fff;
     height: 40px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:3px 10px;
-    box-shadow: inset 0px 10px 15px 0px rgba(0, 0, 0, 0.18), 0px -3px 10px rgba(0, 0, 0, 0.18);
+    padding: 0px 10px;
     position: absolute;
     bottom: 0px;
     box-sizing: border-box;
-    font-size: 0.6em
+    font-size: 0.7em
 }
 div#names {
     display: flex;
@@ -255,15 +207,13 @@ div#names {
     text-decoration: underline;
 }
 div#names a {
-    color: black;
+    color: #383838;
 }
 aside {
-    background-color: rgba(106, 198, 252, 0.7);
-    box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.15), 10px 5px 20px rgba(0, 0, 0, 0.28);
-    padding: 4px;
+    background-color: #383838;
+    color: #fff;
+    padding: 5px;
     box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    height: 130px;
     width: 190px;
     transition: all 0.2s ease-in;
 }
@@ -299,11 +249,10 @@ td {
 }
 .btn {
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(106, 198, 252, 0.9);
-    background-color: rgba(106, 198, 252, .7);
+    border: none;
+    background-color: #383838;
+    color: #fff;
     cursor: pointer;
-    box-shadow: inset 0px -1px 20px 1px rgba(0, 0, 0, 0.2);
     transition-duration: 0.2s;
 }
 .destaque {
@@ -324,4 +273,19 @@ div.invisivel {
 sup {
     vertical-align: super;
     font-size: smaller;
+}
+.d-flex {
+    display: flex
+}
+
+.justify-around {
+    justify-content: space-around
+}
+
+.align-center {
+    align-items: center;
+}
+
+* {
+    font-family: sans-serif !important;
 }
